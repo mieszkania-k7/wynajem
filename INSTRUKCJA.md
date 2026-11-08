@@ -52,6 +52,29 @@ Uwaga: zachowaj wcięcia (spacje na początku linii) – są ważne.
 Na stronie pod każdą ofertą jest „skąd te informacje” – cytat z ogłoszenia, na podstawie którego
 program ustalił czynsz, zwierzęta albo prowizję.
 
+## Statusy ofert (❤️ zapisz / 👀 obejrzana / ✕ odrzuć)
+
+Pod każdą ofertą są trzy przyciski. Ponowne kliknięcie zaznaczonego przycisku usuwa status.
+Na górze strony wybierasz widok: **Do przejrzenia** (wszystko poza odrzuconymi), **Zapisane**,
+**Obejrzane**, **Odrzucone**, **Wszystkie**. Odrzucona oferta znika z „Do przejrzenia”;
+w razie pomyłki kliknij „Cofnij” albo znajdź ją w widoku „Odrzucone”.
+
+Statusy zapisują się na GitHubie (plik `docs/statusy.json`), więc widać je na telefonie i komputerze.
+Na każdym urządzeniu trzeba raz wkleić **klucz GitHuba** (na dole strony: „Wklej klucz GitHuba”).
+Bez klucza statusy zapisują się tylko na tym jednym urządzeniu i wyślą się, gdy klucz dodasz.
+
+Jak zrobić klucz (raz, potem ten sam klucz wklejasz na każdym urządzeniu):
+1. github.com → avatar (prawy górny róg) → **Settings** → na dole menu **Developer settings**
+   → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
+2. Token name: `wynajem-strona`. Expiration: **1 rok** (po roku zrobisz nowy).
+3. Repository access: **Only select repositories** → wybierz `wynajem`.
+4. Permissions → Repository permissions → **Contents** → **Read and write**.
+5. **Generate token** i skopiuj klucz (zaczyna się od `github_pat_`) – GitHub pokaże go tylko raz.
+
+Klucz pozwala tylko zmieniać pliki w repozytorium `wynajem`. Nikomu go nie podawaj.
+Statusy są widoczne w publicznym repozytorium (same identyfikatory ofert i status).
+Zapisane i obejrzane oferty, które znikną z portali, zostają w sekcji „Nieaktualne” przez 120 dni.
+
 ## Jak sprawdzić, czy wszystko działa
 
 1. Na dole strony z listą jest **data ostatniego wyszukiwania** i status każdego źródła (✅ / ❌).
