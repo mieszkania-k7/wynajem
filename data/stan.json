@@ -8069,7 +8069,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4lyhe": {
@@ -43823,6 +43823,39 @@
    "missing": 0,
    "active": true,
    "group": "otodom-ID4DAFa"
+  },
+  "otodom-ID4DT6E": {
+   "source": "otodom",
+   "source_id": "ID4DT6E",
+   "url": "https://www.otodom.pl/pl/oferta/4-pokoje-w-dobrym-standardzie-metro-kondratowicza-ID4DT6E",
+   "title": "4 pokoje w dobrym standardzie / metro Kondratowicza",
+   "price": 4800.0,
+   "rent": 1580.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 85.6,
+   "rooms": 4,
+   "floor": "2",
+   "street": "ul. Ludwika Kondratowicza",
+   "district_hint": "Warszawa, Targówek, Bródno",
+   "lat": null,
+   "lng": null,
+   "approx_m": 0,
+   "date_created": "2026-11-07T20:19:03+00:00",
+   "agency": null,
+   "private_owner": true,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgwYnZ1MmRvYmhtZDEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jDln8PGGXMjPmCE1QEQHa9bbH1qaKyuhkhV6FhTYOfg/image;s=655x491;q=80",
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Otodom",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-08T15:31:28+01:00",
+   "last_seen": "2026-11-08T15:31:28+01:00",
+   "missing": 0,
+   "active": true
   }
  },
  "groups": {
@@ -44730,8 +44763,8 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-08T13:29:38+01:00",
-   "last_try": "2026-11-08T13:29:38+01:00",
+   "last_ok": "2026-11-08T15:31:28+01:00",
+   "last_try": "2026-11-08T15:31:28+01:00",
    "count": 148,
    "found": 474,
    "problems": []
@@ -44742,8 +44775,8 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-08T13:29:38+01:00",
-   "last_try": "2026-11-08T13:29:38+01:00",
+   "last_ok": "2026-11-08T15:31:28+01:00",
+   "last_try": "2026-11-08T15:31:28+01:00",
    "count": 96,
    "found": 398,
    "problems": []
@@ -44754,13 +44787,13 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-08T13:29:38+01:00",
-   "last_try": "2026-11-08T13:29:38+01:00",
+   "last_ok": "2026-11-08T15:31:28+01:00",
+   "last_try": "2026-11-08T15:31:28+01:00",
    "count": 58,
    "found": 259,
    "problems": []
   }
  },
- "last_run": "2026-11-08T13:29:38+01:00",
- "last_run_seconds": 0
+ "last_run": "2026-11-08T15:31:28+01:00",
+ "last_run_seconds": 103
 }
