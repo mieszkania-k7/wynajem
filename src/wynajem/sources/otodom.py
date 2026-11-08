@@ -76,7 +76,8 @@ class Otodom(BaseSource):
                 approx_m=(loc.get("mapDetails") or {}).get("radius"),
                 date_created=it.get("createdAtFirst") or it.get("dateCreated"),
                 private_owner=it.get("isPrivateOwner"), agency=(it.get("agency") or {}).get("name"),
-                photo=(imgs[0].get("medium") or imgs[0].get("large")) if imgs else None))
+                photo=(imgs[0].get("medium") or imgs[0].get("large")) if imgs else None,
+                photos=[u for u in ((i.get("medium") or i.get("large")) for i in imgs if isinstance(i, dict)) if u][:10]))
         pag = sa.get("pagination") or {}
         return out, int(pag.get("totalPages") or 1)
 
@@ -103,7 +104,10 @@ class Otodom(BaseSource):
             lst.rooms = int(to_float(chars["rooms_num"]) or 0) or lst.rooms
         lst.description = html_to_text(ad.get("description") or "")
         imgs = [i.get("medium") or i.get("large") for i in ad.get("images") or [] if isinstance(i, dict)]
+        imgs = [u for u in imgs if u]
         lst.photo = lst.photo or (imgs[0] if imgs else None)
+        if len(imgs) > len(lst.photos):
+            lst.photos = imgs[:10]
         lst.date_created = lst.date_created or ad.get("createdAt")
         lst.detail_ok = True
         return True

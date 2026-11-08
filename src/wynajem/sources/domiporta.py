@@ -76,7 +76,8 @@ class Domiporta(BaseSource):
                 area=_num(area.text()) if area else None,
                 rooms=int(_num(rooms.text()) or 0) or None if rooms else None, street=street,
                 district_hint=", ".join(parts[1:-1]) if len(parts) >= 3 else ", ".join(parts[1:]),
-                photo=img.attributes.get("src") if img else None))
+                photo=img.attributes.get("src") if img else None,
+                photos=[img.attributes["src"]] if img and img.attributes.get("src") else []))
         return out, total
 
     def fetch_detail(self, lst: Listing) -> bool:
@@ -110,5 +111,8 @@ class Domiporta(BaseSource):
             lst.agency, lst.private_owner = seller["name"], False
         elif isinstance(seller, dict) and seller.get("@type") == "Person":
             lst.private_owner = True
+        big = list(dict.fromkeys(re.findall(r"https://galeria\.domiporta\.pl/pictures/big/[^\"' ]+\.jpg", html)))
+        if len(big) > len(lst.photos):
+            lst.photos = big[:10]
         lst.detail_ok = True
         return True

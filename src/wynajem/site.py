@@ -62,6 +62,7 @@ def merge_group(recs: list[dict]) -> dict:
         "institutional": any(r.get("institutional") for r in recs),
         "agencies": sorted({r["agency"] for r in recs if r.get("agency")}),
         "photo": next((r["photo"] for r in recs if r.get("photo")), None),
+        "photos": max((r.get("photos") or [] for r in recs), key=len, default=[])[:10],
         "date_created": dates[0][:10] if dates else None,
         "first_seen": min(r.get("first_seen", "") for r in recs),
         "lat": main.get("lat"), "lng": main.get("lng"),

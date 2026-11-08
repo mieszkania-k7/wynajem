@@ -290,3 +290,37 @@ def recompute() -> int:
     site.write(st, offers)
     print(f"Przeliczono. Zmienionych ofert: {changed}. Aktualnych na liście: {len(offers['active'])}.")
     return 0
+
+
+def backfill_photos() -> int:
+    """Jednorazowo: dopobiera zdjęcia (do 10) dla aktualnych ofert, które mają ich mniej niż 2."""
+    import dataclasses
+    st = load_state()
+    fetcher = Fetcher()
+    srcs = {n: c(fetcher) for n, c in SOURCES.items()}
+    fields = {f.name for f in dataclasses.fields(Listing)}
+    todo = [r for r in st["listings"].values()
+            if r.get("status") == "ok" and r.get("active") and len(r.get("photos") or []) < 2 and r["source"] in srcs]
+    print(f"Do uzupełnienia: {len(todo)} ogłoszeń")
+    done = 0
+    for i, rec in enumerate(todo, 1):
+        lst = Listing(**{f: rec.get(f) for f in fields if f in rec})
+        lst.photos = list(rec.get("photos") or [])
+        try:
+            srcs[rec["source"]].fetch_detail(lst)
+        except SourceBlocked as e:
+            print(f"  przerwano: {e}")
+            break
+        except Exception as e:
+            print(f"  {rec['source']}-{rec['source_id']}: {type(e).__name__}")
+            continue
+        if lst.photos:
+            rec["photos"] = lst.photos
+            done += 1
+        if i % 50 == 0:
+            print(f"  {i}/{len(todo)}", flush=True)
+            save_state(st)
+    save_state(st)
+    site.write(st, site.build_offers(st))
+    print(f"Gotowe: zdjęcia uzupełnione w {done} ogłoszeniach.")
+    return 0

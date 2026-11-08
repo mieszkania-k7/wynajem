@@ -26,6 +26,7 @@ class Listing:
     private_owner: bool | None = None
     description: str = ""
     photo: str | None = None
+    photos: list[str] = field(default_factory=list)   # do 10 zdjęć (miniatury na stronie)
     pets: str | None = None             # „tak” / „nie” / None = brak info
     pets_evidence: str | None = None
     commission: bool | None = None

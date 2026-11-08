@@ -21,6 +21,7 @@ def main() -> None:
     s.add_argument("--tylko", help="tylko te źródła, np. otodom,morizon")
     s.add_argument("--wymus", action="store_true", help="uruchom też poza godzinami z harmonogramu")
     sub.add_parser("test-push")
+    sub.add_parser("zdjecia", help="dopobranie zdjęć dla znanych ofert")
     sub.add_parser("przelicz", help="ponowna ocena znanych ofert po zmianie config.yaml")
     b = sub.add_parser("osm-build")
     b.add_argument("pbf", nargs="?")
@@ -29,6 +30,9 @@ def main() -> None:
     if a.cmd == "osm-build":
         from .osm_build import build
         print(build(Path(a.pbf) if a.pbf else None))
+    elif a.cmd == "zdjecia":
+        from .run import backfill_photos
+        sys.exit(backfill_photos())
     elif a.cmd == "przelicz":
         from .run import recompute
         sys.exit(recompute())

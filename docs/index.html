@@ -70,7 +70,25 @@
   .key { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
   .key button { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line);
                 background: var(--card); cursor: pointer; margin-top: 6px; }
+  .strip { grid-column: 1 / -1; display: flex; gap: 6px; overflow-x: auto; scroll-snap-type: x mandatory;
+           -webkit-overflow-scrolling: touch; padding-bottom: 2px; scrollbar-width: thin; }
+  .strip img { flex: 0 0 auto; width: 132px; height: 96px; object-fit: cover; border-radius: 8px;
+               background: var(--line); scroll-snap-align: start; cursor: zoom-in; }
+  .ph { cursor: zoom-in; }
+  #lb { position: fixed; inset: 0; background: rgba(10,12,11,.94); z-index: 20; display: none;
+        align-items: center; justify-content: center; touch-action: pan-y; }
+  #lb.open { display: flex; }
+  #lb img { max-width: 100%; max-height: 100%; object-fit: contain; user-select: none; }
+  #lb button { position: absolute; background: rgba(255,255,255,.14); color: #fff; border: 0; border-radius: 99px;
+               width: 44px; height: 44px; font-size: 22px; cursor: pointer; }
+  #lb .x { top: max(12px, env(safe-area-inset-top)); right: 12px; }
+  #lb .p { left: 10px; top: 50%; transform: translateY(-50%); }
+  #lb .n { right: 10px; top: 50%; transform: translateY(-50%); }
+  #lb .c { position: absolute; bottom: max(14px, env(safe-area-inset-bottom)); left: 0; right: 0; text-align: center;
+           color: #ddd; font-size: 14px; }
+  #lb .c a { color: #9fe0cb; font-weight: 600; text-decoration: none; margin-left: 10px; }
   @media (max-width: 420px) {
+    .strip img { width: 112px; height: 84px; }
     .card { grid-template-columns: 92px 1fr; gap: 10px; }
     .ph { width: 92px; height: 80px; }
   }
@@ -94,6 +112,8 @@
   </div>
 </header>
 <main id="list"></main>
+<div id="lb" role="dialog" aria-label="Zdjęcia"><img alt=""><button class="x" aria-label="Zamknij">✕</button>
+  <button class="p" aria-label="Poprzednie">‹</button><button class="n" aria-label="Następne">›</button><div class="c"></div></div>
 <footer id="foot"></footer>
 <script src="dane.js"></script>
 <script>
@@ -138,12 +158,15 @@ function card(o, gone) {
   if (o.pets_evidence) ev.push(`zwierzęta: ${esc(o.pets_evidence)}`);
   if (o.commission_evidence) ev.push(`prowizja: ${esc(o.commission_evidence)}`);
   const links = o.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
+  const pics = (o.photos && o.photos.length ? o.photos : (o.photo ? [o.photo] : []));
+  const strip = pics.length > 1 ? `<div class="strip">${pics.slice(1).map((u, i) =>
+    `<img loading="lazy" src="${esc(u)}" alt="" referrerpolicy="no-referrer" data-gal="${esc(o.id)}" data-i="${i + 1}">`).join("")}</div>` : "";
   const img = o.photo ? `<img class="ph" loading="lazy" src="${esc(o.photo)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph"></div>`;
   const st = (S[o.id] || {}).status;
   const btn = (k, txt) => `<button data-id="${esc(o.id)}" data-s="${k}" class="${st === k ? "on" : ""}${k === "odrzucona" ? " rej" : ""}">${txt}</button>`;
   const stBtns = `<div class="st">${btn("zapisana", "❤️ Zapisz")}${btn("obejrzana", "👀 Obejrzana")}${btn("odrzucona", "✕ Odrzuć")}</div>`;
   return `<article class="card${isNew && !st ? " new" : ""}${gone ? " gone" : ""}${st ? " s-" + st : ""}">
-    <a href="${esc(o.links[0].url)}" target="_blank" rel="noopener">${img}</a>
+    <div data-gal="${esc(o.id)}" data-i="0">${img}</div>
     <div>
       <div class="t">${title}</div>
       <div class="sub">${esc(o.area_label)}${o.street ? " · " + (/^(al|pl|os)\.|^rondo/i.test(o.street) ? "" : "ul. ") + esc(o.street) : ""}${o.floor ? " · piętro " + esc(o.floor) : ""}</div>
@@ -153,7 +176,7 @@ function card(o, gone) {
       <div class="links">${links}</div>
       ${stBtns}
       ${ev.length ? `<details><summary>skąd te informacje</summary><div class="ev">${ev.join("<br>")}</div></details>` : ""}
-    </div></article>`;
+    </div>${strip}</article>`;
 }
 
 function render() {
@@ -283,6 +306,43 @@ async function setKey() {
   }
   drawFoot(); loadStatuses();
 }
+
+// ================= GALERIA ZDJĘĆ =================
+const BY_ID = Object.fromEntries([...D.offers, ...D.gone].map(o => [o.id, o]));
+let gal = {pics: [], i: 0, offer: null};
+function galShow() {
+  const lb = $("#lb");
+  lb.querySelector("img").src = gal.pics[gal.i];
+  lb.querySelector(".c").innerHTML = `${gal.i + 1} / ${gal.pics.length}` +
+    (gal.offer ? `<a href="${esc(gal.offer.links[0].url)}" target="_blank" rel="noopener">ogłoszenie ↗</a>` : "");
+  lb.querySelector(".p").style.display = lb.querySelector(".n").style.display = gal.pics.length > 1 ? "" : "none";
+}
+function galOpen(id, i) {
+  const o = BY_ID[id]; if (!o) return;
+  const pics = o.photos && o.photos.length ? o.photos : (o.photo ? [o.photo] : []);
+  if (!pics.length) return;
+  gal = {pics, i: Math.min(i, pics.length - 1), offer: o};
+  $("#lb").classList.add("open"); document.body.style.overflow = "hidden"; galShow();
+}
+function galClose() { $("#lb").classList.remove("open"); document.body.style.overflow = ""; }
+const galStep = d => { gal.i = (gal.i + d + gal.pics.length) % gal.pics.length; galShow(); };
+$("#list").addEventListener("click", e => {
+  const t = e.target.closest("[data-gal]"); if (t) galOpen(t.dataset.gal, +t.dataset.i);
+});
+$("#lb .x").onclick = galClose;
+$("#lb .p").onclick = e => { e.stopPropagation(); galStep(-1); };
+$("#lb .n").onclick = e => { e.stopPropagation(); galStep(1); };
+$("#lb").addEventListener("click", e => { if (e.target.id === "lb") galClose(); });
+document.addEventListener("keydown", e => {
+  if (!$("#lb").classList.contains("open")) return;
+  if (e.key === "Escape") galClose(); else if (e.key === "ArrowRight") galStep(1); else if (e.key === "ArrowLeft") galStep(-1);
+});
+let tx = null;
+$("#lb").addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive: true});
+$("#lb").addEventListener("touchend", e => {
+  if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; tx = null;
+  if (Math.abs(dx) > 40) galStep(dx < 0 ? 1 : -1);
+});
 
 function drawFoot() {
 $("#foot").innerHTML = `<p>Ostatnie wyszukiwanie: <b>${fmtTime(D.generated)}</b></p><table>` +

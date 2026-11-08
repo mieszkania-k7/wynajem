@@ -77,7 +77,8 @@ class Morizon(BaseSource):
                 district_hint=", ".join((loc.get("location") or [])[1:]), date_created=_date(n.get("addedAt")),
                 agency=company.get("name"), private_owner=False if company.get("type") == "AGENCY" else None,
                 description=n.get("description") or "",
-                photo=_photo(photos[0]) if photos and isinstance(photos[0], dict) else None))
+                photo=_photo(photos[0]) if photos and isinstance(photos[0], dict) else None,
+                photos=[u for u in (_photo(p) for p in photos if isinstance(p, dict)) if u][:10]))
         return out, int(props.get("totalCount") or 0)
 
     def fetch_detail(self, lst: Listing) -> bool:
@@ -112,5 +113,7 @@ class Morizon(BaseSource):
         lst.description = html_to_text(pd.get("description") or "")
         ph = [u for u in (_photo(p) for p in pd.get("photos") or [] if isinstance(p, dict)) if u]
         lst.photo = lst.photo or (ph[0] if ph else None)
+        if len(ph) > len(lst.photos):
+            lst.photos = ph[:10]
         lst.detail_ok = True
         return pd.get("presentationType", "ACTIVE") == "ACTIVE"
