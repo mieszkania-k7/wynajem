@@ -1,0 +1,23 @@
+[project]
+name = "wynajem"
+version = "0.1.0"
+description = "Wyszukiwarka mieszkań na wynajem (Warszawa) z powiadomieniami ntfy"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "pyyaml>=6.0.3",
+    "selectolax>=1.0.2",
+    "shapely>=2.2.0",
+]
+
+[project.scripts]
+wynajem = "wynajem.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=9.2.0"]
+# tylko do (rzadkiego) przebudowania danych mapy z pliku OpenStreetMap
+geo = ["osmium>=4.3.2"]

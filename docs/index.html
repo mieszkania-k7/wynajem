@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mieszkania na wynajem</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2f6f5e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="ikona-192.png">
+<link rel="apple-touch-icon" href="ikona-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wynajem">
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d2320; --muted: #66706b; --line: #e3e1da;
+    --accent: #2f6f5e; --accent-soft: #e3efe9; --warn: #9a5b00; --warn-soft: #fbefd9; --star: #b7791f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131614; --card: #1c201e; --ink: #e9ece9; --muted: #9aa49f; --line: #2c322f;
+            --accent: #6cc1a7; --accent-soft: #1f3a32; --warn: #f0b860; --warn-soft: #3a2e17; --star: #f0c060; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line);
+           padding: 12px 16px 10px; padding-top: max(12px, env(safe-area-inset-top)); }
+  h1 { font-size: 19px; margin: 0 0 8px; letter-spacing: -.01em; }
+  h1 small { font-weight: 400; color: var(--muted); font-size: 14px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  select, input[type=number] { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px;
+           background: var(--card); color: var(--ink); }
+  input[type=number] { width: 92px; }
+  label.chk { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 12px 16px 40px; }
+  .card { display: grid; grid-template-columns: 120px 1fr; gap: 12px; background: var(--card);
+          border: 1px solid var(--line); border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+  .card.new { border-color: var(--accent); }
+  .ph { width: 120px; height: 96px; border-radius: 8px; object-fit: cover; background: var(--line); display: block; }
+  .t { font-weight: 600; font-size: 16px; }
+  .t .star { color: var(--star); }
+  .sub { color: var(--muted); font-size: 13.5px; }
+  .cost { margin: 4px 0; font-size: 15px; }
+  .cost b { font-size: 17px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 0; }
+  .tag { font-size: 12.5px; padding: 2px 7px; border-radius: 99px; background: var(--accent-soft); white-space: nowrap; }
+  .tag.warn { background: var(--warn-soft); color: var(--warn); }
+  .links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .links a { font-size: 13.5px; color: var(--accent); text-decoration: none; font-weight: 600;
+             border: 1px solid var(--line); border-radius: 8px; padding: 3px 9px; }
+  .ev { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  details summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+  h2 { font-size: 15px; color: var(--muted); margin: 26px 0 10px; font-weight: 600; }
+  .gone { opacity: .55; }
+  footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 13px; }
+  footer table { border-collapse: collapse; width: 100%; }
+  footer td { padding: 3px 6px 3px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  @media (max-width: 420px) {
+    .card { grid-template-columns: 92px 1fr; gap: 10px; }
+    .ph { width: 92px; height: 80px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mieszkania na wynajem <small id="count"></small></h1>
+  <div class="filters">
+    <select id="f-zone" aria-label="Obszar"><option value="">Wszystkie obszary</option></select>
+    <label class="chk">maks. <input type="number" id="f-max" step="100" inputmode="numeric"> zł</label>
+    <label class="chk"><input type="checkbox" id="f-rent"> tylko z podanym czynszem</label>
+  </div>
+</header>
+<main id="list"></main>
+<footer id="foot"></footer>
+<script src="dane.js"></script>
+<script>
+const ZONES = {praga_poludnie: "Praga-Południe", praga_polnoc: "Praga-Północ",
+  targowek_mieszkaniowy: "Targówek Mieszkaniowy", siekierki: "Siekierki", ursynow: "Ursynów",
+  kolej: "Wawer, Wesoła, Sulejówek i okolice", osiedle_wilno: "Osiedle Wilno"};
+const D = window.DANE || {offers: [], gone: [], sources: []};
+const $ = s => document.querySelector(s);
+const zl = v => v == null ? "?" : Math.round(v).toLocaleString("pl-PL") + " zł";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const fmtDate = s => s ? new Date(s.length <= 10 ? s + "T12:00" : s).toLocaleDateString("pl-PL", {day: "numeric", month: "short"}) : "";
+const fmtTime = s => s ? new Date(s).toLocaleString("pl-PL", {day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"}) : "–";
+
+let lastVisit = null;
+try { lastVisit = localStorage.getItem("ostatnia_wizyta"); localStorage.setItem("ostatnia_wizyta", D.generated || ""); } catch (e) {}
+try { const s = JSON.parse(localStorage.getItem("filtry") || "{}");
+  if (s.zone) $("#f-zone").dataset.v = s.zone; if (s.max) $("#f-max").value = s.max; if (s.rent) $("#f-rent").checked = true; } catch (e) {}
+
+const zonesPresent = [...new Set(D.offers.map(o => o.zone))];
+for (const [k, v] of Object.entries(ZONES)) if (zonesPresent.includes(k)) $("#f-zone").insertAdjacentHTML("beforeend", `<option value="${k}">${v}</option>`);
+if ($("#f-zone").dataset.v) $("#f-zone").value = $("#f-zone").dataset.v;
+$("#f-max").placeholder = D.koszt_max || 5500;
+
+function card(o, gone) {
+  const isNew = !gone && lastVisit && o.first_seen > lastVisit;
+  const place = o.area_label.split(" · ");
+  const title = `${o.star ? '<span class="star">⭐</span> ' : ""}${esc(place[place.length - 1])} · ${o.area ?? "?"} m²${o.rooms ? " · " + o.rooms + " pok." : ""}`;
+  let cost;
+  if (o.rent == null) cost = `<b>${zl(o.price)}</b> + czynsz ?`;
+  else if (o.rent === 0) cost = `<b>${zl(o.price)}</b> <span class="sub">(czynsz w cenie)</span>`;
+  else cost = `${zl(o.price)} + czynsz ${zl(o.rent)} = <b>${zl(o.total)}</b>`;
+  const tags = [];
+  if (o.rent == null) tags.push(`<span class="tag warn">⚠️ czynsz nieznany</span>`);
+  if (o.approx) tags.push(`<span class="tag warn">📍 lokalizacja przybliżona</span>`);
+  tags.push(`<span class="tag">🐕 ${o.pets === "tak" ? "tak" : o.pets === "nie" ? "nie" : "brak info"}</span>`);
+  if (o.commission) tags.push(`<span class="tag">prowizja</span>`);
+  if (o.institutional) tags.push(`<span class="tag">🏢 instytucjonalny</span>`);
+  if (o.praga_agency) tags.push(`<span class="tag">biuro z Pragi Płd.</span>`);
+  for (const s of o.stations || []) tags.push(`<span class="tag">${esc(s)}</span>`);
+  const ev = [];
+  if (o.rent_evidence) ev.push(`czynsz: ${esc(o.rent_evidence)}`);
+  if (o.pets_evidence) ev.push(`zwierzęta: ${esc(o.pets_evidence)}`);
+  if (o.commission_evidence) ev.push(`prowizja: ${esc(o.commission_evidence)}`);
+  const links = o.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
+  const img = o.photo ? `<img class="ph" loading="lazy" src="${esc(o.photo)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph"></div>`;
+  return `<article class="card${isNew ? " new" : ""}${gone ? " gone" : ""}">
+    <a href="${esc(o.links[0].url)}" target="_blank" rel="noopener">${img}</a>
+    <div>
+      <div class="t">${title}</div>
+      <div class="sub">${esc(o.area_label)}${o.street ? " · " + (/^(al|pl|os)\.|^rondo/i.test(o.street) ? "" : "ul. ") + esc(o.street) : ""}${o.floor ? " · piętro " + esc(o.floor) : ""}</div>
+      <div class="cost">${cost}</div>
+      <div class="tags">${tags.join("")}</div>
+      <div class="sub">${isNew ? "🆕 " : ""}${gone ? "zniknęło " + fmtDate(o.gone_at) : "dodane " + fmtDate(o.date_created || o.first_seen)}${o.agencies.length ? " · " + esc(o.agencies.join(", ")) : ""}</div>
+      <div class="links">${links}</div>
+      ${ev.length ? `<details><summary>skąd te informacje</summary><div class="ev">${ev.join("<br>")}</div></details>` : ""}
+    </div></article>`;
+}
+
+function render() {
+  const zone = $("#f-zone").value, max = +$("#f-max").value || Infinity, onlyRent = $("#f-rent").checked;
+  try { localStorage.setItem("filtry", JSON.stringify({zone, max: $("#f-max").value, rent: onlyRent})); } catch (e) {}
+  const ok = o => (!zone || o.zone === zone) && (o.rent == null ? o.price : o.total) <= max && (!onlyRent || o.rent != null);
+  const list = D.offers.filter(ok);
+  $("#count").textContent = `· ${list.length}`;
+  let html = list.map(o => card(o, false)).join("") || `<div class="empty">Brak ofert dla tych filtrów.</div>`;
+  const gone = D.gone.filter(ok);
+  if (gone.length) html += `<h2>Nieaktualne (zniknęły z portali w ostatnich 14 dniach)</h2>` + gone.map(o => card(o, true)).join("");
+  $("#list").innerHTML = html;
+}
+["#f-zone", "#f-max", "#f-rent"].forEach(s => $(s).addEventListener("input", render));
+render();
+
+$("#foot").innerHTML = `<p>Ostatnie wyszukiwanie: <b>${fmtTime(D.generated)}</b></p><table>` +
+  D.sources.map(s => `<tr><td>${s.ok ? "✅" : "❌"} ${esc(s.label)}</td><td>${s.ok ? s.count + " ofert" :
+   "nie działa" + (s.failures ? ` (${s.failures}× z rzędu)` : "") + (s.error ? ": " + esc(s.error) : "")}</td></tr>`).join("") + `</table>`;
+
+if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>

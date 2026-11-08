@@ -1,0 +1,107 @@
+# ================================================================
+#  KRYTERIA WYSZUKIWANIA – możesz tu zmieniać liczby i listy.
+#  Program czyta ten plik przy każdym uruchomieniu.
+#  Zasada: tekst po znaku # to komentarz (program go ignoruje).
+# ================================================================
+
+kryteria:
+  metraz_min: 54            # minimalny metraż w m²
+  koszt_max: 5500           # najem + czynsz administracyjny – maksymalnie (zł)
+  # Gdy czynsz nie jest podany, oferta zostaje, jeśli sam najem ≤ koszt_max (oznaczenie „⚠️ czynsz nieznany”).
+  pierwsze_uruchomienie_dni: 60   # przy pierwszym wyszukiwaniu: oferty dodane w ostatnich tylu dniach
+
+# ---------------------------------------------------------------
+#  LOKALIZACJE – oferta musi pasować do przynajmniej jednego obszaru.
+#  Odległości liczone w linii prostej (metry).
+# ---------------------------------------------------------------
+obszary:
+  praga_poludnie:
+    nazwa: Praga-Południe          # cała dzielnica, bez ograniczeń
+    gwiazdka: [Kamionek]           # oferty z tych osiedli dostają ⭐
+  praga_polnoc:
+    nazwa: Praga-Północ            # cała dzielnica (z wykluczeniami poniżej)
+  targowek_mieszkaniowy:
+    nazwa: Targówek Mieszkaniowy   # bez ograniczeń
+  siekierki:
+    nazwa: Siekierki               # z Mokotowa tylko Siekierki
+  ursynow:
+    nazwa: Ursynów                 # w tym Kabaty
+    metro_max_m: 500               # maks. odległość do stacji metra M1
+  kolej:
+    # Wawer, Wesoła, Sulejówek i okolice – maks. odległość do stacji kolejowej (KM / SKM / PKP)
+    nazwy: [Wawer, Wesoła, Sulejówek, Józefów, Halinów, Zielonka]
+    kolej_max_m: 600
+  osiedle_wilno:
+    # Targówek przy stacji Warszawa Zacisze-Wilno (Elsnerów / os. Wilno)
+    dzielnica: Targówek
+    stacje: [Warszawa Zacisze-Wilno]
+    kolej_max_m: 600
+
+# Wykluczenia – stosowane zawsze, także gdy portal przypisał ofertę do Pragi-Południe
+wykluczenia:
+  ulice: [Targowa]          # oferty przy tych ulicach odpadają
+  ulica_promien_m: 50       # „przy ulicy” = budynek w tej odległości od ulicy
+  dworce: [Warszawa Wileńska, Warszawa Wschodnia]
+  dworzec_promien_m: 100
+
+# Lokalizacja z promieniem przybliżenia większym niż tyle metrów = „📍 lokalizacja przybliżona”
+przyblizenie_m: 150
+
+# ---------------------------------------------------------------
+#  TYP OFERTY – odrzucamy ogłoszenia, w których tytule/opisie są te słowa
+# ---------------------------------------------------------------
+odrzuc_slowa:
+  - "pokój do wynajęcia"
+  - "pokoj do wynajecia"
+  - "wynajmę pokój"
+  - "na doby"
+  - "na dni"
+  - "krótkoterminow"
+  - "krotkoterminow"
+  - "lokal użytkowy"
+  - "lokal usługowy"
+  - "biuro do wynajęcia"
+
+# ---------------------------------------------------------------
+#  HARMONOGRAM I POBIERANIE
+# ---------------------------------------------------------------
+harmonogram:
+  godzina_od: 7             # pierwsze wyszukiwanie (czas warszawski)
+  godzina_do: 23            # ostatnie
+  co_ile_godzin: 2
+
+pobieranie:
+  odstep_s: 1.5             # przerwa między zapytaniami do jednego portalu (sekundy)
+  max_stron: 8              # maks. stron wyników na jeden obszar
+  awarie_do_alertu: 3       # po tylu nieudanych przebiegach z rzędu – jedno powiadomienie „Źródło X nie działa”
+
+# Źródła: true = włączone, false = wyłączone
+zrodla:
+  otodom: true
+  morizon: true
+  domiporta: true
+  olx: false                # OLX blokuje automatyczne pobieranie (HTTP 403) – patrz INSTRUKCJA.md, plan B
+
+# Biura z Pragi Płd. – ich oferty z portali dostają oznaczenie „biuro z Pragi Płd.”
+# (wystarczy fragment nazwy, wielkość liter bez znaczenia)
+biura_praga_pld:
+  - Home Point
+  - Metrohouse Wiatraczna    # inne biura Metrohouse nie są z Pragi Płd.
+  - Digital Broker
+  - AYCON
+  - URBIS
+  - Praga Home
+
+# Wynajem instytucjonalny (firmy, które same są właścicielami budynków) – oznaczenie „🏢 instytucjonalny”.
+# Wystawiają się na Otodom/Morizon, więc ich oferty przychodzą z portali.
+instytucjonalni:
+  - Heimstaden          # m.in. ul. Żupnicza (Kamionek)
+  - LivUp               # m.in. ul. Jagiellońska (Praga-Północ)
+  - Resi4Rent
+  - Vantage Rent
+  - Fizzy
+  - Nest Rental
+  - Mojo
+
+# Adres strony z listą ofert (uzupełnię, gdy powstanie strona na GitHubie)
+strona_url: ""
