@@ -256,18 +256,28 @@ function keyBox() {
   const has = !!token();
   return `<div class="key">🔑 <b>Zapis statusów:</b> ${has ? "połączono z GitHubem – statusy widać na każdym urządzeniu."
     : "nie połączono – statusy zapisują się tylko na tym urządzeniu."}<br>
-    <button id="key-set">${has ? "Zmień klucz" : "Wklej klucz GitHuba"}</button> ${has ? `<button id="key-del">Odłącz</button>` : ""}</div>`;
+    <div id="key-form" style="display:${has ? "none" : "block"}">
+      <input id="key-in" type="password" autocomplete="off" autocapitalize="off" spellcheck="false"
+        placeholder="wklej klucz github_pat_…" style="font:inherit;width:100%;margin-top:6px;padding:7px 8px;border:1px solid var(--line);border-radius:8px">
+      <button id="key-save">Zapisz klucz</button> <span id="key-msg"></span>
+    </div>
+    ${has ? `<button id="key-show">Zmień klucz</button> <button id="key-del">Odłącz</button>` : ""}</div>`;
 }
 async function setKey() {
-  const t = (prompt("Wklej klucz GitHuba (zaczyna się od github_pat_):") || "").trim();
-  if (!t) return;
+  const t = ($("#key-in").value || "").trim();
+  if (!t) { $("#key-msg").textContent = "Najpierw wklej klucz w pole powyżej."; return; }
+  $("#key-msg").textContent = "sprawdzam…";
   ls("github_klucz", t);
   try {
     const r = await fetch(`https://api.github.com/repos/${REPO}`, {headers: hdr()});
     const j = await r.json();
     if (!r.ok || !(j.permissions && j.permissions.push)) throw new Error();
     toast("Klucz działa ✓ – statusy będą wspólne");
-  } catch (e) { ls("github_klucz", null); alert("Ten klucz nie działa (brak dostępu do zapisu w repozytorium wynajem). Sprawdź uprawnienia i spróbuj jeszcze raz."); }
+  } catch (e) {
+    ls("github_klucz", null);
+    $("#key-msg").textContent = "❌ Ten klucz nie działa (brak zapisu w repozytorium wynajem). Sprawdź, czy skopiowałaś go w całości.";
+    return;
+  }
   drawFoot(); loadStatuses();
 }
 
@@ -275,8 +285,9 @@ function drawFoot() {
 $("#foot").innerHTML = `<p>Ostatnie wyszukiwanie: <b>${fmtTime(D.generated)}</b></p><table>` +
   D.sources.map(s => `<tr><td>${s.ok ? "✅" : "❌"} ${esc(s.label)}</td><td>${s.ok ? s.count + " ofert" :
    "nie działa" + (s.failures ? ` (${s.failures}× z rzędu)` : "") + (s.error ? ": " + esc(s.error) : "")}</td></tr>`).join("") + `</table>` + keyBox();
-  $("#key-set").onclick = setKey;
-  if ($("#key-del")) $("#key-del").onclick = () => { if (confirm("Odłączyć klucz na tym urządzeniu?")) { ls("github_klucz", null); drawFoot(); } };
+  $("#key-save").onclick = setKey;
+  if ($("#key-show")) $("#key-show").onclick = () => { $("#key-form").style.display = "block"; $("#key-in").focus(); };
+  if ($("#key-del")) $("#key-del").onclick = () => { ls("github_klucz", null); drawFoot(); toast("Odłączono klucz na tym urządzeniu"); };
 }
 drawFoot();
 render();

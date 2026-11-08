@@ -1,5 +1,5 @@
 // Prosty service worker: zawsze najpierw sieć (świeże oferty), a bez internetu – ostatnia zapisana wersja.
-const CACHE = "wynajem-v1";
+const CACHE = "wynajem-v2";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => self.clients.claim());
 self.addEventListener("fetch", e => {
