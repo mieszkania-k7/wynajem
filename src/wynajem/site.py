@@ -79,12 +79,18 @@ def build_offers(st: dict) -> dict:
             groups.setdefault(r["group"], []).append(r)
     active, gone = [], []
     cutoff = (datetime.now(TZ) - timedelta(days=14)).isoformat()
+    long_cutoff = (datetime.now(TZ) - timedelta(days=120)).isoformat()
+    try:   # statusy ustawione na stronie (❤️ zapisana / 👀 obejrzana) – takie oferty zostają dłużej
+        statuses = json.loads((SITE / "statusy.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        statuses = {}
     for recs in groups.values():
         o = merge_group(recs)
         if o["gone_at"] is None:
             o["links"] = [l for l in o["links"] if l["active"]] or o["links"]
             active.append(o)
-        elif o["gone_at"] >= cutoff:
+        elif o["gone_at"] >= cutoff or (o["gone_at"] >= long_cutoff and
+                                        (statuses.get(o["id"]) or {}).get("status") in ("zapisana", "obejrzana")):
             gone.append(o)
     key = lambda o: (o.get("date_created") or o["first_seen"][:10], o["first_seen"])
     active.sort(key=key, reverse=True)

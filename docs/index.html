@@ -54,6 +54,22 @@
   footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 13px; }
   footer table { border-collapse: collapse; width: 100%; }
   footer td { padding: 3px 6px 3px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .st { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .st button { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 99px; cursor: pointer;
+               border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+  .st button.on { border-color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+  .st button.on.rej { border-color: #b4483c; background: #fbe6e3; color: #8a2f25; }
+  .card.s-odrzucona { opacity: .6; }
+  .card.s-zapisana { border-color: #d98b7e; box-shadow: 0 0 0 1px #d98b7e inset; }
+  #sync { font-size: 12.5px; color: var(--muted); margin-left: auto; }
+  #sync.err { color: #8a2f25; }
+  .toast { position: fixed; left: 50%; bottom: max(16px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+           background: var(--ink); color: #fff; padding: 9px 14px; border-radius: 10px; font-size: 14px; z-index: 9;
+           display: flex; gap: 12px; align-items: center; max-width: calc(100% - 32px); }
+  .toast button { font: inherit; background: none; border: 0; color: #9fe0cb; font-weight: 600; cursor: pointer; }
+  .key { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+  .key button { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line);
+                background: var(--card); cursor: pointer; margin-top: 6px; }
   @media (max-width: 420px) {
     .card { grid-template-columns: 92px 1fr; gap: 10px; }
     .ph { width: 92px; height: 80px; }
@@ -64,9 +80,17 @@
 <header>
   <h1>Mieszkania na wynajem <small id="count"></small></h1>
   <div class="filters">
+    <select id="f-view" aria-label="Widok">
+      <option value="aktywne">Do przejrzenia</option>
+      <option value="zapisana">❤️ Zapisane</option>
+      <option value="obejrzana">👀 Obejrzane</option>
+      <option value="odrzucona">✕ Odrzucone</option>
+      <option value="wszystkie">Wszystkie</option>
+    </select>
     <select id="f-zone" aria-label="Obszar"><option value="">Wszystkie obszary</option></select>
     <label class="chk">maks. <input type="number" id="f-max" step="100" inputmode="numeric"> zł</label>
     <label class="chk"><input type="checkbox" id="f-rent"> tylko z podanym czynszem</label>
+    <span id="sync"></span>
   </div>
 </header>
 <main id="list"></main>
@@ -86,7 +110,7 @@ const fmtTime = s => s ? new Date(s).toLocaleString("pl-PL", {day: "numeric", mo
 let lastVisit = null;
 try { lastVisit = localStorage.getItem("ostatnia_wizyta"); localStorage.setItem("ostatnia_wizyta", D.generated || ""); } catch (e) {}
 try { const s = JSON.parse(localStorage.getItem("filtry") || "{}");
-  if (s.zone) $("#f-zone").dataset.v = s.zone; if (s.max) $("#f-max").value = s.max; if (s.rent) $("#f-rent").checked = true; } catch (e) {}
+  if (s.view) $("#f-view").value = s.view; if (s.zone) $("#f-zone").dataset.v = s.zone; if (s.max) $("#f-max").value = s.max; if (s.rent) $("#f-rent").checked = true; } catch (e) {}
 
 const zonesPresent = [...new Set(D.offers.map(o => o.zone))];
 for (const [k, v] of Object.entries(ZONES)) if (zonesPresent.includes(k)) $("#f-zone").insertAdjacentHTML("beforeend", `<option value="${k}">${v}</option>`);
@@ -115,7 +139,10 @@ function card(o, gone) {
   if (o.commission_evidence) ev.push(`prowizja: ${esc(o.commission_evidence)}`);
   const links = o.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
   const img = o.photo ? `<img class="ph" loading="lazy" src="${esc(o.photo)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph"></div>`;
-  return `<article class="card${isNew ? " new" : ""}${gone ? " gone" : ""}">
+  const st = (S[o.id] || {}).status;
+  const btn = (k, txt) => `<button data-id="${esc(o.id)}" data-s="${k}" class="${st === k ? "on" : ""}${k === "odrzucona" ? " rej" : ""}">${txt}</button>`;
+  const stBtns = `<div class="st">${btn("zapisana", "❤️ Zapisz")}${btn("obejrzana", "👀 Obejrzana")}${btn("odrzucona", "✕ Odrzuć")}</div>`;
+  return `<article class="card${isNew && !st ? " new" : ""}${gone ? " gone" : ""}${st ? " s-" + st : ""}">
     <a href="${esc(o.links[0].url)}" target="_blank" rel="noopener">${img}</a>
     <div>
       <div class="t">${title}</div>
@@ -124,14 +151,17 @@ function card(o, gone) {
       <div class="tags">${tags.join("")}</div>
       <div class="sub">${isNew ? "🆕 " : ""}${gone ? "zniknęło " + fmtDate(o.gone_at) : "dodane " + fmtDate(o.date_created || o.first_seen)}${o.agencies.length ? " · " + esc(o.agencies.join(", ")) : ""}</div>
       <div class="links">${links}</div>
+      ${stBtns}
       ${ev.length ? `<details><summary>skąd te informacje</summary><div class="ev">${ev.join("<br>")}</div></details>` : ""}
     </div></article>`;
 }
 
 function render() {
-  const zone = $("#f-zone").value, max = +$("#f-max").value || Infinity, onlyRent = $("#f-rent").checked;
-  try { localStorage.setItem("filtry", JSON.stringify({zone, max: $("#f-max").value, rent: onlyRent})); } catch (e) {}
-  const ok = o => (!zone || o.zone === zone) && (o.rent == null ? o.price : o.total) <= max && (!onlyRent || o.rent != null);
+  const zone = $("#f-zone").value, max = +$("#f-max").value || Infinity, onlyRent = $("#f-rent").checked, view = $("#f-view").value;
+  try { localStorage.setItem("filtry", JSON.stringify({zone, max: $("#f-max").value, rent: onlyRent, view})); } catch (e) {}
+  const stOf = o => (S[o.id] || {}).status;
+  const okView = o => view === "wszystkie" ? true : view === "aktywne" ? stOf(o) !== "odrzucona" : stOf(o) === view;
+  const ok = o => okView(o) && (!zone || o.zone === zone) && (o.rent == null ? o.price : o.total) <= max && (!onlyRent || o.rent != null);
   const list = D.offers.filter(ok);
   $("#count").textContent = `· ${list.length}`;
   let html = list.map(o => card(o, false)).join("") || `<div class="empty">Brak ofert dla tych filtrów.</div>`;
@@ -139,12 +169,118 @@ function render() {
   if (gone.length) html += `<h2>Nieaktualne (zniknęły z portali w ostatnich 14 dniach)</h2>` + gone.map(o => card(o, true)).join("");
   $("#list").innerHTML = html;
 }
-["#f-zone", "#f-max", "#f-rent"].forEach(s => $(s).addEventListener("input", render));
-render();
+["#f-view", "#f-zone", "#f-max", "#f-rent"].forEach(s => $(s).addEventListener("input", render));
 
+// ================= STATUSY (wspólne dla wszystkich urządzeń – plik docs/statusy.json na GitHubie) =========
+const REPO = "kingakosiorek13-wq/wynajem", PATH = "docs/statusy.json", API = `https://api.github.com/repos/${REPO}/contents/${PATH}`;
+let S = {};                                   // {id_oferty: {status, at}}
+let pending = {};                             // zmiany jeszcze niezapisane na GitHubie
+const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
+try { pending = JSON.parse(ls("statusy_oczekujace") || "{}"); } catch (e) {}
+const token = () => ls("github_klucz");
+const hdr = () => ({Authorization: `Bearer ${token()}`, Accept: "application/vnd.github+json"});
+const b64dec = b => new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\s/g, "")), c => c.charCodeAt(0)));
+const b64enc = str => { const by = new TextEncoder().encode(str); let s = ""; for (const x of by) s += String.fromCharCode(x); return btoa(s); };
+const syncMsg = (t, err) => { $("#sync").textContent = t; $("#sync").className = err ? "err" : ""; };
+
+async function remote() {
+  if (token()) {
+    const r = await fetch(API + "?t=" + Date.now(), {headers: hdr(), cache: "no-store"});
+    if (r.status === 404) return {data: {}, sha: null};
+    if (!r.ok) throw new Error("GitHub " + r.status);
+    const j = await r.json();
+    return {data: JSON.parse(b64dec(j.content) || "{}"), sha: j.sha};
+  }
+  const r = await fetch("statusy.json?t=" + Date.now(), {cache: "no-store"});
+  return {data: r.ok ? await r.json() : {}, sha: null};
+}
+function applyPending(data) {
+  for (const [id, v] of Object.entries(pending)) { if (v === null) delete data[id]; else data[id] = v; }
+  return data;
+}
+async function loadStatuses() {
+  try { S = applyPending((await remote()).data); } catch (e) { S = applyPending({}); syncMsg("⚠️ nie udało się wczytać statusów", true); }
+  render();
+  if (Object.keys(pending).length) flush();
+}
+let flushing = false;
+async function flush() {
+  if (!token()) { syncMsg(Object.keys(pending).length ? "⚠️ statusy tylko na tym urządzeniu – podłącz klucz (na dole)" : "", true); return; }
+  if (flushing) return; flushing = true;
+  syncMsg("zapisuję…");
+  try {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const {data, sha} = await remote();
+      const sent = {...pending};
+      const merged = applyPending(data);
+      const r = await fetch(API, {method: "PUT", headers: {...hdr(), "Content-Type": "application/json"},
+        body: JSON.stringify({message: "Statusy ofert", content: b64enc(JSON.stringify(merged, null, 1) + "\n"), ...(sha ? {sha} : {})})});
+      if (r.ok) {
+        for (const [id, v] of Object.entries(sent)) if (JSON.stringify(pending[id]) === JSON.stringify(v)) delete pending[id];
+        ls("statusy_oczekujace", JSON.stringify(pending));
+        S = applyPending(merged);
+        syncMsg("✓ zapisano");
+        break;
+      }
+      if (r.status === 401 || r.status === 403) { syncMsg("⚠️ klucz nie działa – sprawdź go na dole strony", true); break; }
+      if (attempt === 2) syncMsg("⚠️ nie zapisano – spróbuję przy następnej zmianie", true);
+    }
+  } catch (e) { syncMsg("⚠️ brak połączenia – zapiszę później", true); }
+  flushing = false;
+  if (Object.keys(pending).length && token() && !$("#sync").classList.contains("err")) setTimeout(flush, 500);
+}
+const LABELS = {zapisana: "Zapisano ❤️", obejrzana: "Oznaczono jako obejrzane 👀", odrzucona: "Odrzucono – nie będzie jej w „Do przejrzenia”"};
+function setStatus(id, status) {
+  const prev = S[id] || null;
+  const next = status ? {status, at: new Date().toISOString()} : null;
+  if (next) S[id] = next; else delete S[id];
+  pending[id] = next;
+  ls("statusy_oczekujace", JSON.stringify(pending));
+  render();
+  toast(status ? LABELS[status] : "Usunięto status", () => setStatus(id, prev ? prev.status : null));
+  clearTimeout(setStatus.t); setStatus.t = setTimeout(flush, 800);
+}
+function toast(text, undo) {
+  document.querySelector(".toast")?.remove();
+  const el = document.createElement("div"); el.className = "toast";
+  el.innerHTML = `<span>${esc(text)}</span>` + (undo ? `<button>Cofnij</button>` : "");
+  if (undo) el.querySelector("button").onclick = () => { el.remove(); undo(); };
+  document.body.appendChild(el); setTimeout(() => el.remove(), 4000);
+}
+$("#list").addEventListener("click", e => {
+  const b = e.target.closest(".st button"); if (!b) return;
+  const id = b.dataset.id, s = b.dataset.s;
+  setStatus(id, (S[id] || {}).status === s ? null : s);
+});
+function keyBox() {
+  const has = !!token();
+  return `<div class="key">🔑 <b>Zapis statusów:</b> ${has ? "połączono z GitHubem – statusy widać na każdym urządzeniu."
+    : "nie połączono – statusy zapisują się tylko na tym urządzeniu."}<br>
+    <button id="key-set">${has ? "Zmień klucz" : "Wklej klucz GitHuba"}</button> ${has ? `<button id="key-del">Odłącz</button>` : ""}</div>`;
+}
+async function setKey() {
+  const t = (prompt("Wklej klucz GitHuba (zaczyna się od github_pat_):") || "").trim();
+  if (!t) return;
+  ls("github_klucz", t);
+  try {
+    const r = await fetch(`https://api.github.com/repos/${REPO}`, {headers: hdr()});
+    const j = await r.json();
+    if (!r.ok || !(j.permissions && j.permissions.push)) throw new Error();
+    toast("Klucz działa ✓ – statusy będą wspólne");
+  } catch (e) { ls("github_klucz", null); alert("Ten klucz nie działa (brak dostępu do zapisu w repozytorium wynajem). Sprawdź uprawnienia i spróbuj jeszcze raz."); }
+  drawFoot(); loadStatuses();
+}
+
+function drawFoot() {
 $("#foot").innerHTML = `<p>Ostatnie wyszukiwanie: <b>${fmtTime(D.generated)}</b></p><table>` +
   D.sources.map(s => `<tr><td>${s.ok ? "✅" : "❌"} ${esc(s.label)}</td><td>${s.ok ? s.count + " ofert" :
-   "nie działa" + (s.failures ? ` (${s.failures}× z rzędu)` : "") + (s.error ? ": " + esc(s.error) : "")}</td></tr>`).join("") + `</table>`;
+   "nie działa" + (s.failures ? ` (${s.failures}× z rzędu)` : "") + (s.error ? ": " + esc(s.error) : "")}</td></tr>`).join("") + `</table>` + keyBox();
+  $("#key-set").onclick = setKey;
+  if ($("#key-del")) $("#key-del").onclick = () => { if (confirm("Odłączyć klucz na tym urządzeniu?")) { ls("github_klucz", null); drawFoot(); } };
+}
+drawFoot();
+render();
+loadStatuses();
 
 if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js");
 </script>

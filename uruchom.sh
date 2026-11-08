@@ -13,7 +13,8 @@ LOG=cache/przebiegi.log
     git add data docs
     if ! git diff --cached --quiet; then
       git commit -q -m "Wyszukiwanie $(date '+%Y-%m-%d %H:%M')"
-      git push -q || echo "Nie udało się wysłać na GitHuba (brak internetu?)"
+      # gdy w międzyczasie strona zapisała statusy – dociągamy je i wysyłamy jeszcze raz
+      git push -q || { git pull --rebase -q && git push -q; } || echo "Nie udało się wysłać na GitHuba (brak internetu?)"
     fi
   fi
 } >> "$LOG" 2>&1

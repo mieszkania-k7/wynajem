@@ -32,4 +32,4 @@ jobs:
           git config user.name "wyszukiwarka"
           git config user.email "actions@users.noreply.github.com"
           git add data docs
-          git diff --cached --quiet || (git commit -m "Wyszukiwanie (chmura) $(date -u +%F' '%H:%M)" && git push)
+          git diff --cached --quiet || (git commit -m "Wyszukiwanie (chmura) $(date -u +%F' '%H:%M)" && (git push || (git pull --rebase && git push)))
