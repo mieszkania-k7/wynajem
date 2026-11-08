@@ -172,7 +172,8 @@ function render() {
 ["#f-view", "#f-zone", "#f-max", "#f-rent"].forEach(s => $(s).addEventListener("input", render));
 
 // ================= STATUSY (wspólne dla wszystkich urządzeń – plik docs/statusy.json na GitHubie) =========
-const REPO = "kingakosiorek13-wq/wynajem", PATH = "docs/statusy.json", API = `https://api.github.com/repos/${REPO}/contents/${PATH}`;
+const REPO = "mieszkania-k7/wynajem", PATH = "docs/statusy.json", API = `https://api.github.com/repos/${REPO}/contents/${PATH}`;
+const NOREPLY = {name: "mieszkania-k7", email: "354105258+mieszkania-k7@users.noreply.github.com"};
 let S = {};                                   // {id_oferty: {status, at}}
 let pending = {};                             // zmiany jeszcze niezapisane na GitHubie
 const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
@@ -214,7 +215,9 @@ async function flush() {
       const sent = {...pending};
       const merged = applyPending(data);
       const r = await fetch(API, {method: "PUT", headers: {...hdr(), "Content-Type": "application/json"},
-        body: JSON.stringify({message: "Statusy ofert", content: b64enc(JSON.stringify(merged, null, 1) + "\n"), ...(sha ? {sha} : {})})});
+        body: JSON.stringify({message: "Statusy ofert",
+          // podpis anonimowym adresem GitHuba – bez tego GitHub wpisałby prawdziwy e-mail konta
+          committer: NOREPLY, author: NOREPLY, content: b64enc(JSON.stringify(merged, null, 1) + "\n"), ...(sha ? {sha} : {})})});
       if (r.ok) {
         for (const [id, v] of Object.entries(sent)) if (JSON.stringify(pending[id]) === JSON.stringify(v)) delete pending[id];
         ls("statusy_oczekujace", JSON.stringify(pending));
