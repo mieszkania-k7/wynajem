@@ -66,9 +66,10 @@ odrzuc_slowa:
 #  HARMONOGRAM I POBIERANIE
 # ---------------------------------------------------------------
 harmonogram:
-  godzina_od: 7             # pierwsze wyszukiwanie (czas warszawski)
-  godzina_do: 23            # ostatnie
-  co_ile_godzin: 2
+  # Godziny wyszukiwania na Macu: 8:05, 15:05 i 20:05. Żeby je zmienić, edytuj plik
+  # harmonogram/pl.kinga.wynajem.plist i kliknij ponownie „Wlacz harmonogram.command”.
+  godzina_od: 7             # poza tymi godzinami (czas warszawski) wyszukiwanie automatyczne nic nie robi
+  godzina_do: 23
 
 pobieranie:
   odstep_s: 1.5             # przerwa między zapytaniami do jednego portalu (sekundy)

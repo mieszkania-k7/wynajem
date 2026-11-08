@@ -2,7 +2,7 @@
 
 ## Jak to działa (w skrócie)
 
-1. **Twój Mac** co 2 godziny (7:05, 9:05, …, 23:05) przegląda Otodom, Morizon i Domiporta.
+1. **Twój Mac** 3 razy dziennie (8:05, 15:05 i 20:05) przegląda Otodom, Morizon i Domiporta.
    Gdy Mac śpi, wyszukiwanie odbędzie się zaraz po jego wybudzeniu.
 2. Program odsiewa oferty według `config.yaml`, łączy duplikaty z różnych portali i zapamiętuje,
    co już widziałaś (plik `data/stan.json`).
@@ -18,7 +18,7 @@ działają normalnie. W chmurze GitHuba jest przygotowane wyszukiwanie „zapaso
 | Plik | Co robi |
 |---|---|
 | **Szukaj teraz.command** | jedno wyszukiwanie od razu |
-| **Wlacz harmonogram.command** | włącza automatyczne wyszukiwanie co 2 godziny |
+| **Wlacz harmonogram.command** | włącza automatyczne wyszukiwanie (8:05, 15:05, 20:05) |
 | **Wylacz harmonogram.command** | wyłącza je |
 
 Przy pierwszym dwukliku macOS może zapytać, czy otworzyć plik: kliknij prawym przyciskiem → **Otwórz** → **Otwórz**.

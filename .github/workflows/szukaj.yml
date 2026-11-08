@@ -1,13 +1,13 @@
 # Wyszukiwanie w chmurze GitHuba.
 # Domyślnie TYLKO ręcznie (zakładka Actions → „Szukaj mieszkań” → Run workflow) – główne wyszukiwanie
-# robi Mac. Żeby wyszukiwanie działało w chmurze co 2 godziny, usuń znaki # przed „schedule” i „cron”
+# robi Mac. Żeby wyszukiwanie działało w chmurze automatycznie, usuń znaki # przed „schedule” i „cron”
 # (i wyłącz harmonogram na Macu, żeby nie szukały oba naraz).
 name: Szukaj mieszkań
 
 on:
   workflow_dispatch:
   # schedule:
-  #   - cron: "5 5-21/2 * * *"   # co 2 godziny (czas UTC); program sam pomija godziny poza 7–23 w Warszawie
+  #   - cron: "5 7,14,19 * * *"   # 8:05, 15:05, 20:05 zimą (czas UTC; latem godzinę później)
 
 permissions:
   contents: write
