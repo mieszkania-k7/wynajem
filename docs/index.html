@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mieszkania na wynajem</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#2f6f5e">
+<meta name="theme-color" content="#f6f5f1">
+<meta name="color-scheme" content="light">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="ikona-192.png">
 <link rel="apple-touch-icon" href="ikona-192.png">
@@ -16,10 +17,7 @@
     --bg: #f6f5f1; --card: #ffffff; --ink: #1d2320; --muted: #66706b; --line: #e3e1da;
     --accent: #2f6f5e; --accent-soft: #e3efe9; --warn: #9a5b00; --warn-soft: #fbefd9; --star: #b7791f;
   }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #131614; --card: #1c201e; --ink: #e9ece9; --muted: #9aa49f; --line: #2c322f;
-            --accent: #6cc1a7; --accent-soft: #1f3a32; --warn: #f0b860; --warn-soft: #3a2e17; --star: #f0c060; }
-  }
+  :root { color-scheme: light; }   /* zawsze jasna, także gdy telefon ma tryb ciemny */
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
          font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
