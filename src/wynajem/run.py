@@ -129,8 +129,10 @@ def run(notify: bool = True, only: list[str] | None = None, force: bool = False)
             seen_now.add(key)
             old = st["listings"].get(key)
             if old and (old.get("price") == lst.price or lst.price is None):
-                old.update(last_seen=ts, missing=0, active=True)
-                old.pop("gone_at", None)
+                # zapisujemy tylko zmiany – żeby plik stanu (w repozytorium) nie zmieniał się przy każdym przebiegu
+                if old.get("missing") or not old.get("active"):
+                    old.update(missing=0, active=True, last_seen=ts)
+                    old.pop("gone_at", None)
                 continue
             if not src.prefilter(lst):
                 st["listings"][key] = {**lst.to_dict(), "label": src.label, "status": "odrzucona",
