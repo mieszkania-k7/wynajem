@@ -266,6 +266,8 @@ def recompute() -> int:
         if (rec.get("reason") or "").startswith(("tytuł", "opis")):
             continue          # odrzucone po treści ogłoszenia – zostają odrzucone
         lst = Listing(**{f: rec.get(f) for f in fields if f in rec})
+        if lst.rent is not None and 0 < lst.rent < 50:   # zaślepka „1 zł” = czynsz nieznany
+            lst.rent = rec["rent"] = rec["rent_evidence"] = None
         reason = None
         if lst.area is not None and lst.area < k["metraz_min"]:
             reason = f"metraż {lst.area:g} m²"

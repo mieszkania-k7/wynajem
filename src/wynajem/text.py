@@ -130,6 +130,8 @@ def rejected_type(lst: Listing, words: list[str]) -> str | None:
 def enrich(lst: Listing) -> None:
     """Uzupełnia czynsz (gdy portal nie podał), zwierzęta i prowizję na podstawie opisu."""
     text = (lst.title or "") + "\n" + (lst.description or "")
+    if lst.rent is not None and 0 < lst.rent < 50:      # „1 zł” wpisane przez biuro jako zaślepka
+        lst.rent, lst.rent_evidence = None, None
     if lst.rent is None:
         lst.rent, lst.rent_evidence = rent_from_text(text, lst.price)
     lst.pets, lst.pets_evidence = pets_from_text(text)

@@ -55,3 +55,10 @@ def test_areas():
     assert not v.ok
     v = areas.evaluate(L(None, None, 1500, None, "Warszawa, Wawer"))   # przybliżona → nie odrzucamy
     assert v.ok and v.approx
+
+
+def test_placeholder_rent():
+    from wynajem.text import enrich
+    lst = Listing("x", "1", "u", price=5300, rent=1, rent_evidence="pole")
+    enrich(lst)
+    assert lst.rent is None
