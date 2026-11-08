@@ -40,7 +40,8 @@ def merge_group(recs: list[dict]) -> dict:
     o = {
         "id": main["group"],
         "title": main.get("title") or "",
-        "area_label": main.get("area_label") or "?",
+        "area_label": next((r["area_label"] for r in recs if r.get("star")), None) if any(r.get("star") for r in recs)
+        else (main.get("area_label") or "?"),
         "zone": main.get("zone"),
         "star": any(r.get("star") for r in recs),
         "approx": all(r.get("approx") for r in recs),

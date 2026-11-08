@@ -101,6 +101,26 @@ class Geo:
         p = Point(x, y)
         return [self.areas[i][1] for i in self._area_tree.query(p, predicate="within")]
 
+    def where_levels(self, x: float, y: float) -> list[tuple[str, str]]:
+        p = Point(x, y)
+        return [(self.areas[i][0], self.areas[i][1]) for i in self._area_tree.query(p, predicate="within")]
+
+    def street_min_dist(self, street: str, area: str | None, nearest) -> float | None:
+        """Najmniejsza odległość od ulicy (jej odcinka w danym obszarze) do obiektu z funkcji `nearest`.
+        Pozwala odrzucić ofertę z przybliżoną lokalizacją, gdy CAŁA ulica jest za daleko od stacji."""
+        geoms = self.area_geoms(area) if area else []
+        best = None
+        for line in self.street_lines(street):
+            n = max(2, int(line.length // 50))
+            for i in range(n + 1):
+                p = line.interpolate(i / n, normalized=True)
+                if geoms and not any(g.distance(p) < 100 for g in geoms):
+                    continue
+                r = nearest(p.x, p.y)
+                if r and (best is None or r[0] < best):
+                    best = r[0]
+        return best
+
     def area_geoms(self, name: str) -> list:
         return [g for _, n, g in self.areas if norm_name(n) == norm_name(name)]
 

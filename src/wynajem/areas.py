@@ -53,10 +53,12 @@ def evaluate(lst: Listing) -> Verdict:
     hint = [p.strip() for p in (lst.district_hint or "").split(",") if p.strip()]
 
     names: list[str] = []
+    levels: list[tuple[str, str]] = []
     x = y = None
     if lat is not None:
         x, y = to_xy(lng, lat)
-        names = g.where(x, y)
+        levels = g.where_levels(x, y)
+        names = [n for _, n in levels]
     if approx:
         names = names + hint            # przy przybliżeniu ufamy też opisowi portalu
     have = {norm_name(n) for n in names}
@@ -95,12 +97,25 @@ def evaluate(lst: Listing) -> Verdict:
     sub = [n for n in names if norm_name(n) not in {norm_name(k) for k in (
         "Warszawa", "Praga-Południe", "Praga-Północ", "Targówek", "Mokotów", "Ursynów", "Wawer", "Wesoła",
         "mazowieckie")}]
-    detail = lambda base: base + (f" · {sub[0]}" if sub else "")
+    def detail(base: str) -> str:
+        extra = [n for n in sub if norm_name(n) != norm_name(base)]
+        return base + (f" · {extra[0]}" if extra else "")
+
+    def street_too_far(area: str, limit: int, nearest) -> float | None:
+        """Przybliżona lokalizacja, ale znana ulica: gdy CAŁA ulica jest dalej niż limit – pewne odrzucenie."""
+        if not lst.street:
+            return None
+        d = g.street_min_dist(lst.street, area, nearest)
+        return d if d is not None and d > limit else None
 
     pp = z["praga_poludnie"]
     if has(pp["nazwa"]):
-        star = any(has(s) for s in pp.get("gwiazdka", []))
-        return ok("praga_poludnie", detail(pp["nazwa"]), star)
+        # gwiazdka tylko dla właściwego osiedla (poziom 10 MSI) albo gdy portal tak opisuje lokalizację
+        stars = {norm_name(s) for s in pp.get("gwiazdka", [])}
+        star = any(lvl == "10" and norm_name(n) in stars for lvl, n in levels) or \
+            (approx and any(norm_name(h) in stars for h in hint))
+        label = f"{pp['nazwa']} · {pp['gwiazdka'][0]}" if star else detail(pp["nazwa"])
+        return ok("praga_poludnie", label, star)
     if has(z["praga_polnoc"]["nazwa"]):
         return ok("praga_polnoc", detail(z["praga_polnoc"]["nazwa"]))
     if has(z["targowek_mieszkaniowy"]["nazwa"]):
@@ -111,6 +126,10 @@ def evaluate(lst: Listing) -> Verdict:
     u = z["ursynow"]
     if has(u["nazwa"]):
         if x is None or approx:
+            d = street_too_far("Ursynów", u["metro_max_m"], g.nearest_metro)
+            if d:
+                v.reason = f"Ursynów: cała ul. {lst.street} ≥ {int(d)} m od metra"
+                return v
             return ok("ursynow", detail("Ursynów"))
         m = g.nearest_metro(x, y)
         if m and m[0] <= u["metro_max_m"]:
@@ -122,6 +141,10 @@ def evaluate(lst: Listing) -> Verdict:
     for name in k["nazwy"]:
         if has(name):
             if x is None or approx:
+                d = street_too_far(name, k["kolej_max_m"], g.nearest_rail)
+                if d:
+                    v.reason = f"{name}: cała ul. {lst.street} ≥ {int(d)} m od stacji"
+                    return v
                 return ok("kolej", detail(name))
             r = g.nearest_rail(x, y)
             if r and r[0] <= k["kolej_max_m"]:
@@ -132,8 +155,10 @@ def evaluate(lst: Listing) -> Verdict:
     w = z["osiedle_wilno"]
     if has(w["dzielnica"]) and x is not None:
         r = g.nearest_rail(x, y, w["stacje"])
-        if r and (r[0] <= w["kolej_max_m"] or (approx and r[0] - radius <= w["kolej_max_m"])):
-            return ok("osiedle_wilno", "Targówek · os. Wilno")
+        far = approx and street_too_far(w["dzielnica"], w["kolej_max_m"],
+                                        lambda px, py: g.nearest_rail(px, py, w["stacje"]))
+        if r and not far and (r[0] <= w["kolej_max_m"] or (approx and r[0] - radius <= w["kolej_max_m"])):
+            return ok("osiedle_wilno", "Targówek · os. Wilno" if not approx else "Targówek (sprawdź, czy os. Wilno)")
         v.reason = f"Targówek (nie Mieszkaniowy): stacja Zacisze-Wilno {int(r[0])} m" if r else "Targówek"
         return v
 

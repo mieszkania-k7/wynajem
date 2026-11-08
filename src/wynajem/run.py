@@ -248,3 +248,41 @@ def prune(st: dict) -> None:
     used = {r.get("group") for r in st["listings"].values()}
     for g in [g for g in st["groups"] if g not in used]:
         del st["groups"][g]
+
+
+def recompute() -> int:
+    """Ponowna ocena znanych ofert (np. po zmianie config.yaml) – bez pobierania stron z portali."""
+    import dataclasses
+    cfg = load()
+    k = cfg["kryteria"]
+    st = load_state()
+    fields = {f.name for f in dataclasses.fields(Listing)}
+    changed = 0
+    for rec in st["listings"].values():
+        if rec.get("status") == "stara" or not rec.get("detail_ok"):
+            continue
+        if (rec.get("reason") or "").startswith(("tytuł", "opis")):
+            continue          # odrzucone po treści ogłoszenia – zostają odrzucone
+        lst = Listing(**{f: rec.get(f) for f in fields if f in rec})
+        reason = None
+        if lst.area is not None and lst.area < k["metraz_min"]:
+            reason = f"metraż {lst.area:g} m²"
+        total = (lst.price or 0) + (lst.rent or 0)
+        if not reason and total > k["koszt_max"]:
+            reason = f"koszt {total:.0f} zł"
+        v = areas.evaluate(lst)
+        if not reason and not v.ok:
+            reason = v.reason
+        status = "odrzucona" if reason else "ok"
+        if status != rec.get("status") or v.area != rec.get("area_label") or v.star != rec.get("star"):
+            changed += 1
+        rec.update(status=status, reason=reason, area_label=v.area, zone=v.zone, star=v.star,
+                   approx=v.approx, stations=v.stations, total=total)
+    new = assign_groups(st)
+    for g in new:                 # przeliczenie nie wysyła powiadomień
+        st["groups"][g]["notified"] = True
+    save_state(st)
+    offers = site.build_offers(st)
+    site.write(st, offers)
+    print(f"Przeliczono. Zmienionych ofert: {changed}. Aktualnych na liście: {len(offers['active'])}.")
+    return 0
