@@ -20857,8 +20857,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "morizon-mzn2048274041",
    "photos": [
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/a6/ea/49425597_1634961617_mieszkanie-warszawa-praga-poludnie-ul-lukowska.jpg",
@@ -20870,7 +20870,8 @@
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/a6/ea/49425597_1634961677_mieszkanie-warszawa-praga-poludnie-ul-lukowska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/a6/ea/49425597_1634961689_mieszkanie-warszawa-praga-poludnie-ul-lukowska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/a6/ea/49425597_1634961703_mieszkanie-warszawa-praga-poludnie-ul-lukowska.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048269813": {
    "source": "morizon",
@@ -21772,8 +21773,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DvnD",
    "photos": [
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/b9/d2/49283145_1629773929_mieszkanie-warszawa-grochow-ul-miedzyborska.jpg",
@@ -21786,7 +21787,8 @@
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/b9/d2/49283145_1629774151_mieszkanie-warszawa-grochow-ul-miedzyborska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/b9/d2/49283145_1629774155_mieszkanie-warszawa-grochow-ul-miedzyborska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/b9/d2/49283145_1629774159_mieszkanie-warszawa-grochow-ul-miedzyborska.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048202886": {
    "source": "morizon",
@@ -23650,8 +23652,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2047085429": {
    "source": "morizon",
@@ -25262,7 +25265,7 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "morizon-mzn2047864762": {
@@ -25676,8 +25679,9 @@
    "reason": "poza lokalizacjami: Mokotów, Stary Mokotów, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048344895": {
    "source": "morizon",
@@ -26421,8 +26425,9 @@
    "reason": "poza lokalizacjami: Mokotów, Sielce, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048314082": {
    "source": "morizon",
@@ -27640,8 +27645,9 @@
    "reason": "poza lokalizacjami: Mokotów, Sielce, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048252543": {
    "source": "morizon",
@@ -28459,8 +28465,9 @@
    "reason": "koszt 5600 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048198553": {
    "source": "morizon",
@@ -28675,8 +28682,9 @@
    "reason": "poza lokalizacjami: Osiedle Służewiec Południowy, Służewiec, Mokotów",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048175991": {
    "source": "morizon",
@@ -29707,7 +29715,7 @@
    "reason": "koszt 5750 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "morizon-mzn2048100459": {
@@ -30052,8 +30060,9 @@
    "reason": "koszt 6400 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048078878": {
    "source": "morizon",
@@ -30430,8 +30439,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2047011515": {
    "source": "morizon",
@@ -31840,8 +31850,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2047770362": {
    "source": "morizon",
@@ -34818,8 +34829,9 @@
    "reason": "koszt 6080 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048182688": {
    "source": "morizon",
@@ -36652,8 +36664,9 @@
    "reason": "koszt 5570 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T08:07:01+01:00"
   },
   "morizon-mzn2048169051": {
    "source": "morizon",
@@ -51322,9 +51335,9 @@
    "source_id": "mzn2048378827",
    "url": "https://www.morizon.pl/oferta/wynajem-mieszkanie-warszawa-mokotow-iberyjska-57m2-mzn2048378827",
    "title": "3 niezależne pok.,idealne dla 3 studentów lub pracujących,piękny widok",
-   "price": 4300.0,
+   "price": 4100.0,
    "rent": 630.0,
-   "rent_evidence": "…najmu Cena: 4 300 zł + czynsz administracji (630 zł) + media Kaucja: 6000 zł Wolne od 14 li…",
+   "rent_evidence": "…najmu Cena: 4 100 zł + czynsz administracji (630 zł) + media Kaucja: 6000 zł Wolne od 14 li…",
    "area": 57.0,
    "rooms": 3,
    "floor": "14/15",
@@ -51353,7 +51366,7 @@
    "commission_evidence": null,
    "detail_ok": true,
    "label": "Morizon",
-   "total": 4930.0,
+   "total": 4730.0,
    "area_label": null,
    "zone": null,
    "star": false,
@@ -51366,7 +51379,9 @@
    "status": "odrzucona",
    "reason": "poza lokalizacjami: Stegny, Mokotów, Warszawa",
    "first_seen": "2026-11-11T20:36:45+01:00",
-   "last_seen": "2026-11-11T20:36:45+01:00",
+   "group": null,
+   "price_before": 4300.0,
+   "last_seen": "2026-11-12T08:07:01+01:00",
    "missing": 0,
    "active": true
   },
@@ -53277,12 +53292,12 @@
  "sources": {
   "otodom": {
    "label": "Otodom",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "otodom.pl: błąd połączenia (ReadTimeout)",
    "last_ok": "2026-11-11T20:36:45+01:00",
-   "last_try": "2026-11-11T20:36:45+01:00",
+   "last_try": "2026-11-12T08:07:01+01:00",
    "count": 168,
    "found": 475,
    "problems": []
@@ -53293,25 +53308,25 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-11T20:36:45+01:00",
-   "last_try": "2026-11-11T20:36:45+01:00",
-   "count": 105,
-   "found": 395,
+   "last_ok": "2026-11-12T08:07:01+01:00",
+   "last_try": "2026-11-12T08:07:01+01:00",
+   "count": 103,
+   "found": 393,
    "problems": []
   },
   "domiporta": {
    "label": "Domiporta",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "domiporta.pl: błąd połączenia (RemoteProtocolError)",
    "last_ok": "2026-11-11T20:36:45+01:00",
-   "last_try": "2026-11-11T20:36:45+01:00",
+   "last_try": "2026-11-12T08:07:01+01:00",
    "count": 68,
    "found": 259,
    "problems": []
   }
  },
- "last_run": "2026-11-11T20:36:45+01:00",
- "last_run_seconds": 202
+ "last_run": "2026-11-12T08:07:01+01:00",
+ "last_run_seconds": 1915
 }
