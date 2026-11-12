@@ -3499,8 +3499,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DAjA",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRkZXc2enpxYnJsaS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.P50wKTYfEt80KBX6biyS-dEQLI9yvn2SNqIx3R6D3M4/image;s=655x491;q=80",
@@ -3513,7 +3513,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjloajlpcGVkYWxsNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1XLgtBd1O6Nblm8eRACOy_IcMQkhDDaLRm_gWoDM45A/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9mOGs4cTV0dmZ0NzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ox-Xh2Xf4zT7f2JREL9D7lsdAoERa8KoA19ZP-ggVvQ/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdqMDJobTA5NWR6cS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.MCRFgyFzrtnhBgMDemUX_JcWYtjdjAVBuTLj3nr01qw/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DzZX": {
    "source": "otodom",
@@ -5903,7 +5904,7 @@
    "source_id": "ID4CXxZ",
    "url": "https://www.otodom.pl/pl/oferta/blisko-ch-promenada-2-pokoje-cicha-okolica-ID4CXxZ",
    "title": "Blisko CH Promenada | 2 pokoje | Cicha okolica",
-   "price": 2700.0,
+   "price": 2500.0,
    "rent": 1300.0,
    "rent_evidence": "pole „czynsz” w Otodom",
    "area": 56.0,
@@ -5911,24 +5912,48 @@
    "floor": "3",
    "street": "Zbigniewa Burzyńskiego",
    "district_hint": "Warszawa, Praga-Południe, Gocław",
-   "lat": null,
-   "lng": null,
+   "lat": 52.228764,
+   "lng": 21.1082,
    "approx_m": 0,
    "date_created": "2026-09-07T10:58:15+00:00",
    "agency": "Lares Estates",
    "private_owner": false,
-   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJzYmI5YWg3ZGJqOTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ktz0Yz-SX_N2rsfalWlRWSeiWRP9YKW9-z2efMzaFdc/image;s=655x491;q=80",
-   "pets": null,
-   "pets_evidence": null,
-   "commission": null,
-   "commission_evidence": null,
-   "detail_ok": false,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJtNTg2OXljdmRwdC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ZYuw38iJOJsrQx_h_1JpnJLqPXYOk3exmBCPs3ETf7g/image;s=655x491;q=80",
+   "photos": [
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJtNTg2OXljdmRwdC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ZYuw38iJOJsrQx_h_1JpnJLqPXYOk3exmBCPs3ETf7g/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBzbHVkd215cXo3cTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.QrxvuiWTFVuR8JGlDNK3tl1GE894qsKOkc4DZV1FM-o/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU0NmtoOTBxM3RkNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.q3O5xmNOPJXgIhD4Ko5sTvM2z1aIxXUiD66LLtn-uVM/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InF1cmRxdHBxNXFobjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ZMOjFbTZJ3kMaQWRJJpm8SRZGKQEDWouNEjCI8Q9W4A/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjcybnFjZmlucndwbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RDhmOLj4LBqrCYAj9LeAFaX-EI_B9jjQN58wHTXRmK8/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InI0dGxocmx3dmY5bS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.GrPuuKH0LNGlHiWJJkKxUiaZskPyZXE1GwD-sGztTIg/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxyMzJwcTJwdDAxbDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.cpW9BHnTW6IC8KSKsTJSHBjN4Yp3_9L3zMwxVsOBbvc/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE1cjJpNjc1ZWlzNjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RBOhyrbiyVwAXVLN69eQM9BAEK2t56MFNM5d_ydLuGY/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvZ2hvczI0bmhqZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ZKTfLCM7W_lVsNFp-ti-AiwkEa8bjI-BT56xrzf812c/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY0cTI1dTR1djBmMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.a69MNPobjc9-g-UjoclA7ERkT3uUINWnkD7VxooSNt4/image;s=655x491;q=80"
+   ],
+   "pets": "nie",
+   "pets_evidence": "…10. roku życia akceptowane - Bez zwierząt Mieszkanie będzie doskonałym wyborem…",
+   "commission": true,
+   "commission_evidence": "ogłoszenie biura: Lares Estates",
+   "detail_ok": true,
    "label": "Otodom",
-   "status": "stara",
-   "reason": "dodana ponad 2 mies. temu",
+   "total": 3800.0,
+   "area_label": "Praga-Południe · Gocław",
+   "zone": "praga_poludnie",
+   "star": false,
+   "approx": false,
+   "stations": [
+    "🚆 Gocławek 1990 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "ok",
+   "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
-   "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
+   "group": "otodom-ID4DCSz",
+   "price_before": 2700.0,
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
    "active": true
   },
   "otodom-ID4CVOW": {
@@ -8734,8 +8759,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4COKh": {
    "source": "otodom",
@@ -9823,7 +9849,7 @@
    "source_id": "ID4DNWu",
    "url": "https://www.otodom.pl/pl/oferta/dzieci-zwierzeta-3-pokoje-55-m-garaz-w-cenie-ID4DNWu",
    "title": "Dzieci | zwierzęta | 3 pokoje | 55 m | garaż w cenie!!!",
-   "price": 3290.0,
+   "price": 3150.0,
    "rent": 850.0,
    "rent_evidence": "pole „czynsz” w Otodom",
    "area": 55.0,
@@ -9831,38 +9857,47 @@
    "floor": "2",
    "street": "Ponarska",
    "district_hint": "Warszawa, Targówek, Elsnerów",
-   "lat": null,
-   "lng": null,
+   "lat": 52.2754,
+   "lng": 21.083143,
    "approx_m": 0,
    "date_created": "2026-11-02T15:42:08+00:00",
    "agency": "Trastum Real Estate ",
    "private_owner": false,
-   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp2OTN1bmd3aG5vYy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.jX5tkHQx2q8sIIn0dCfjFlXMZ8EmPP6QJrBf8j4k3pg/image;s=655x491;q=80",
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlzdTNjYnNrcm04czEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ut7Mr4RdavJPqbqD3aPw82qXDyiFDKdJW16VjLAPD7s/image;s=655x491;q=80",
    "photos": [
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp2OTN1bmd3aG5vYy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.jX5tkHQx2q8sIIn0dCfjFlXMZ8EmPP6QJrBf8j4k3pg/image;s=655x491;q=80",
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVpbWY3YXI1aHVsNzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.7W3TjXvI0FonsS2qh-kfky02dhRJTvlXYDbrIDEDZcQ/image;s=655x491;q=80",
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ4aWlkbXN1Znh3dDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.PcHMUAVD9ej0RCbDC9tBq7cB3PUPeeXwakiH1Grpk9g/image;s=655x491;q=80"
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlzdTNjYnNrcm04czEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ut7Mr4RdavJPqbqD3aPw82qXDyiFDKdJW16VjLAPD7s/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5sMnVkOHpibHJrZjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9KpWi6YXQ_DnOBA7HlxqqsuTGvLbayp4usKi-QqLp30/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJrMjIxc3BwZWlsazMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.d7LMzepK4mMkjvp4-PKD_49kstWfXH5cDxkqBmzVUsE/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV2bnBjNng4d3Z3dTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.q-DWAEPgziDsKrgeKnV2r17HArN8DXheQla6TGB1DC0/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBuNzA4eHdwYjFxZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RnIiNdOA4Y7zclXlKQPTD-XC79oQ1xDXdcfMBFbWfQs/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0aGliYmwyOGF6NzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.SMgSPGJIc6ABmkca9NTTJP_HrXcJimLH-BSBBcRMSUU/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE3eHU3aWR2OGVqZy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.t2EamaKFeu0BByyRaYxSlxpNGMZ2o7ZtsbBikk_r9xM/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVkaHU5N3NxY210ZzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ysFLm7g0nJJTMadUNoD5e3OODkru8a9PtM7wkDRDkbg/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFtMmMxYjd6eDFnODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.UdqU-zBPCi8gEIVlpTmMhU1J-A4SjLoTR9lctER4H9E/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imdib2g0dDNzN3g5YzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.3I0okURsU0ThOsZ1xMiSKhOroKvGaeDwSpLespmalms/image;s=655x491;q=80"
    ],
    "pets": null,
    "pets_evidence": null,
    "commission": true,
    "commission_evidence": "ogłoszenie biura: Trastum Real Estate ",
-   "detail_ok": false,
+   "detail_ok": true,
    "label": "Otodom",
-   "total": 4140.0,
-   "area_label": null,
-   "zone": null,
+   "total": 4000.0,
+   "area_label": "Targówek · os. Wilno",
+   "zone": "osiedle_wilno",
    "star": false,
-   "approx": true,
-   "stations": [],
+   "approx": false,
+   "stations": [
+    "🚆 Zacisze-Wilno 350 m"
+   ],
    "praga_agency": false,
    "institutional": false,
-   "status": "odrzucona",
-   "reason": "poza lokalizacjami: Warszawa, Targówek, Elsnerów",
+   "status": "ok",
+   "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "group": "otodom-ID4DNWu",
-   "price_before": 2990.0,
-   "last_seen": "2026-11-10T08:05:49+01:00",
+   "price_before": 3290.0,
+   "last_seen": "2026-11-12T20:05:05+01:00",
    "missing": 0,
    "active": true
   },
@@ -10371,8 +10406,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DBTv",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNwNGhpdnBteHBtZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.nTQYcTNMZj9OkgxkLJNcFTLN5wiqld6UGwQCxIhGmtI/image;s=655x491;q=80",
@@ -10385,7 +10420,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBwOXJoeWRncWdreTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._SsOaOzDL7IzXBWeVlNW0ChKrVSz3H3Iyvj1AxaHl4Y/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJmMjZubzJseHhtaTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.X1PqwfXzKl3Ik6TAOc0RSCB4xpF_VLyBhA_hX9yjF8Q/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl2czZ4NmF5bXBjdy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.zn2WJpCEyaj_12Kh08tSTEQm0nuyDvPx6yuxr8lktvA/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DBaT": {
    "source": "otodom",
@@ -10884,8 +10920,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4Drj9",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im42aTljeG84cDR0bjEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.UvZalbdyZnvzyPRjLR9D-5xwyL6Qg_2zYYBEadqa0ek/image;s=655x491;q=80",
@@ -10894,7 +10930,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluMXhzZWN0d2I5ei1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.RZMBuHY3NfbsDA-EX2BXYN1Bjdi8mg1gsyb10_vPmhs/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjR0dzhib3E1Y2kzYS1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ._11dl5t-aDuVTdEMAV3zIT-OYwncfeoitHeYlWSTzdk/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM2ZTQ2bTI4NjQyZTMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.t__QUxZuAlp6NVLkv307-egKSa0Q6QyoRgJE9UupjFQ/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DqWC": {
    "source": "otodom",
@@ -12164,7 +12201,7 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4e0TO": {
@@ -12915,8 +12952,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DOXo": {
    "source": "otodom",
@@ -15267,8 +15305,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DALO",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUyMHd4eThhc2F6ZjEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-WEMDf-gkddDg2w-39CW_VtWGTweqD3Av-cT8-nV4cA/image;s=655x491;q=80",
@@ -15281,7 +15319,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmeWJ4MnJ6M2pteC1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.95420eKVf-y5llRVr2PkIADz6x_oi4sGArkP3vNTaEs/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY2YjVpcjd2NWd2OC1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.1d97T5dUgDnsVLED95J2amRv5QE0X3NvqFDtAsn6eX4/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM3bzFvcHhiNmJuZjEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Q0qI0pZXY77A8r6ZvLiSK5NQknmNrHfBgJcwNa4SvZA/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DAf8": {
    "source": "otodom",
@@ -15587,8 +15626,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4Dx2r",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAzeTE3dGxoYzk3cDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zf8v383vwr0i2rctlQLfj9qBF2B2i8-534IhqoVUFxs/image;s=655x491;q=80",
@@ -15597,7 +15636,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InUxbmJ0NGc2bHliaTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.th4zrQle63XuYgCt7KDG8KeRZK4x6wy-G-orGhok_ow/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEzdWE3eDRvYmh2Yi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.WjaEGKVQ3uYmAgIK-uBF3OofNg0Mq38oEE4z3j2l90M/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlvNGJqcmoxdzY1MTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bNeOhfrh_M38dF_XntLWi-XPleEbcYZq-dBgM1yBI3c/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DvHo": {
    "source": "otodom",
@@ -16454,7 +16494,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4Dm3s": {
@@ -16883,8 +16923,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4DgUh": {
    "source": "otodom",
@@ -19223,7 +19264,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-10T08:05:49+01:00",
    "last_seen": "2026-11-10T08:05:49+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4BmdO": {
@@ -19884,8 +19925,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "otodom-ID4y4e4": {
    "source": "otodom",
@@ -20601,8 +20643,9 @@
    "reason": "koszt 5700 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048310661": {
    "source": "morizon",
@@ -20644,8 +20687,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "morizon-mzn2048310661",
    "photos": [
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/10/bc/49500419_1645266505_mieszkanie-warszawa-praga-poludnie-ul-janusza-meissnera.jpg",
@@ -20658,7 +20701,8 @@
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/10/bc/49500419_1645266551_mieszkanie-warszawa-praga-poludnie-ul-janusza-meissnera.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/10/bc/49500419_1645266557_mieszkanie-warszawa-praga-poludnie-ul-janusza-meissnera.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/10/bc/49500419_1645266565_mieszkanie-warszawa-praga-poludnie-ul-janusza-meissnera.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048306348": {
    "source": "morizon",
@@ -21669,8 +21713,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "morizon-mzn2048213267",
    "photos": [
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/da/76/49305477_1638102375_mieszkanie-warszawa-kamionek-ul-minska.jpg",
@@ -21682,7 +21726,8 @@
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/da/76/49305477_1638102411_mieszkanie-warszawa-kamionek-ul-minska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/da/76/49305477_1638102415_mieszkanie-warszawa-kamionek-ul-minska.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/da/76/49305477_1638102427_mieszkanie-warszawa-kamionek-ul-minska.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048211960": {
    "source": "morizon",
@@ -22205,8 +22250,9 @@
    "reason": "koszt 5700 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048164014": {
    "source": "morizon",
@@ -22693,8 +22739,8 @@
    "source": "morizon",
    "source_id": "mzn2048202651",
    "url": "https://www.morizon.pl/oferta/wynajem-mieszkanie-warszawa-praga-poludnie-aleja-stanow-zjednoczonych-70m2-mzn2048202651",
-   "title": "3p. najtańsze 70 m2 obok jez. Gocławskie",
-   "price": 3900.0,
+   "title": "3p. najtańsze 70 m2 do negocjacji",
+   "price": 3700.0,
    "rent": null,
    "rent_evidence": null,
    "area": 70.0,
@@ -22709,13 +22755,25 @@
    "agency": "FlatRent",
    "private_owner": false,
    "photo": "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020033_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+   "photos": [
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020033_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020043_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020053_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020057_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020059_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020065_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020073_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020079_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020087_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020093_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg"
+   ],
    "pets": "tak",
    "pets_evidence": "…t equal to one month`s rent Pets are welcome (insurance required) Oferta nr3520777…",
    "commission": true,
    "commission_evidence": "ogłoszenie biura: FlatRent",
    "detail_ok": true,
    "label": "Morizon",
-   "total": 3900.0,
+   "total": 3700.0,
    "area_label": "Praga-Południe · Gocław",
    "zone": "praga_poludnie",
    "star": false,
@@ -22728,22 +22786,11 @@
    "status": "ok",
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
-   "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
-   "active": true,
    "group": "otodom-ID4Djcf",
-   "photos": [
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020033_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020043_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020053_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020057_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020059_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020065_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020073_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020079_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020087_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg",
-    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/51/ab/49281427_1618020093_mieszkanie-warszawa-praga-poludnie-al-stanow-zjednoczonych.jpg"
-   ]
+   "price_before": 3900.0,
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
   },
   "morizon-mzn2048078415": {
    "source": "morizon",
@@ -26520,8 +26567,9 @@
    "reason": "koszt 5700 zł",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048309754": {
    "source": "morizon",
@@ -31552,8 +31600,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2047844585": {
    "source": "morizon",
@@ -32247,8 +32296,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2047435927": {
    "source": "morizon",
@@ -36788,8 +36838,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "morizon-mzn2048169051",
    "photos": [
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/3c/49214155_1609760595_mieszkanie-warszawa-anin.jpg",
@@ -36801,7 +36851,8 @@
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/3c/49214155_1609760661_mieszkanie-warszawa-anin.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/3c/49214155_1609760671_mieszkanie-warszawa-anin.jpg",
     "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/3c/49214155_1609760675_mieszkanie-warszawa-anin.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "morizon-mzn2048252647": {
    "source": "morizon",
@@ -38827,7 +38878,7 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156806216": {
@@ -39390,7 +39441,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156820548": {
@@ -39912,8 +39963,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-156607429": {
    "source": "domiporta",
@@ -40143,8 +40195,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-156999752": {
    "source": "domiporta",
@@ -41070,7 +41123,7 @@
    "reason": "poza lokalizacjami: Mokotów, Stary Mokotów, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156989186": {
@@ -41103,7 +41156,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156988923": {
@@ -41928,7 +41981,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156963145": {
@@ -42547,7 +42600,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156944716": {
@@ -43625,8 +43678,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-156759098": {
    "source": "domiporta",
@@ -43856,7 +43910,7 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156582169": {
@@ -46293,8 +46347,9 @@
    "group": null,
    "price_before": 4700.0,
    "last_seen": "2026-11-11T20:36:45+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-156957586": {
    "source": "domiporta",
@@ -46538,9 +46593,10 @@
    "reason": "Ursynów: cała ul. Kłobucka ≥ 1980 m od metra",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
-   "group": "morizon-mzn2048212784"
+   "missing": 2,
+   "active": false,
+   "group": "morizon-mzn2048212784",
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-156949843": {
    "source": "domiporta",
@@ -47698,8 +47754,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "domiporta-156949301",
    "photos": [
     "https://galeria.domiporta.pl/pictures/big/15/32/cf/cf32eb1f37422de88fe3e3b61b42799f631b63a9/wynajme-mieszkanie-warszawa-wawer.jpg",
@@ -47711,7 +47767,8 @@
     "https://galeria.domiporta.pl/pictures/big/17/92/85/85927fabc275b3270b2be34076a36cc1388f89cc/wynajme-mieszkanie-warszawa-wawer.jpg",
     "https://galeria.domiporta.pl/pictures/big/15/7c/36/367ce186850591a97f68a8fd45d9ec8219a61e78/wynajme-mieszkanie-warszawa-wawer.jpg",
     "https://galeria.domiporta.pl/pictures/big/12/32/42/4232268808533c71f6ea97b6ca991c76e23950f6/wynajme-mieszkanie-warszawa-wawer.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-12T20:05:05+01:00"
   },
   "domiporta-154328991": {
    "source": "domiporta",
@@ -52188,7 +52245,7 @@
    "reason": "poza lokalizacjami: Mokotów, Osiedle Wierzbno, Wierzbno",
    "first_seen": "2026-11-11T20:36:45+01:00",
    "last_seen": "2026-11-11T20:36:45+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-157003008": {
@@ -53384,6 +53441,375 @@
    "missing": 0,
    "active": true,
    "group": "domiporta-156949301"
+  },
+  "otodom-ID4DVZH": {
+   "source": "otodom",
+   "source_id": "ID4DVZH",
+   "url": "https://www.otodom.pl/pl/oferta/3-pokoje-na-kabatach-metro-2-balkony-z-widokiem-na-las-kabacki-200m-ID4DVZH",
+   "title": "3 pokoje na Kabatach – metro, 2 balkony z widokiem na Las Kabacki 200m",
+   "price": 3699.0,
+   "rent": 1100.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 63.0,
+   "rooms": 3,
+   "floor": "1",
+   "street": "ul. Batystowa",
+   "district_hint": "Warszawa, Ursynów, Natolin",
+   "lat": 52.128864,
+   "lng": 21.050638,
+   "approx_m": 0,
+   "date_created": "2026-11-12T15:17:15+00:00",
+   "agency": null,
+   "private_owner": true,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh0anNld3FlM2ZkZzMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jx4VfBb-VAvZ4f2GsXD-sVfdFyoFs5cDpVhuS6RB5Ws/image;s=655x491;q=80",
+   "photos": [
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh0anNld3FlM2ZkZzMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jx4VfBb-VAvZ4f2GsXD-sVfdFyoFs5cDpVhuS6RB5Ws/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijk0c3BlMTJ6NjNycC1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.r7it7z_EtcszGkqLd7T_3fXCKkcub7RqQPHqmCpndKU/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRmMzhrY3kxNG05YTEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bWYDIrLGXOYRluUpAx9RbctEQrEo_CZWVQAgco1V2ss/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRuMTV1enpoNnAyZy1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.7s3_1ymdeXykEBzVpjKP4K9kF96eqE0OgqPj3LfRwp0/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJweTc1cjRzNnRxcTMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.BQlHIz0YJbIixdBAstCGbciJ1JYtd02em8krq2vDfYk/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRodHZ1OG1pNHc5Zy1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.kd8AACELp79JOBzTN4gcaxt6zkRHtFLXDnpSLPzKkCI/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im51MWp4NzlweW0zMDMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.TYwP9oQFtI9VBT-cOkw2PNwByZrbBU9_FOt-A9lRz7I/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY1cnpzemo3cWJsMi1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.AATprgKzXwuDv545_XteMuDvl94W7t4VKBgMlpv_X88/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRuc2xldmJhazVlcy1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.wxQHrTDP0oVhPk4dM4a3uMe-4uZIqWvCwTXZSgbyFZ0/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imtzb3dwYnMxMm9vdjEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8idYryAzXobpMV3sW5RzB9-MCb4i4REDbePDScRVhWA/image;s=655x491;q=80"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": false,
+   "commission_evidence": "ogłoszenie prywatne",
+   "detail_ok": true,
+   "label": "Otodom",
+   "total": 4799.0,
+   "area_label": null,
+   "zone": null,
+   "star": false,
+   "approx": false,
+   "stations": [
+    "🚇 Kabaty 1010 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "odrzucona",
+   "reason": "Ursynów: metro 1009 m (limit 500 m)",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "otodom-ID4DVXB": {
+   "source": "otodom",
+   "source_id": "ID4DVXB",
+   "url": "https://www.otodom.pl/pl/oferta/59m2-3-pokoje-garaz-metro-ursynow-ID4DVXB",
+   "title": "59m2, 3 pokoje, garaż, metro Ursynów",
+   "price": 5500.0,
+   "rent": 1800.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 59.0,
+   "rooms": 3,
+   "floor": "1",
+   "street": "al. Komisji Edukacji Narodowej",
+   "district_hint": "Warszawa, Ursynów, Natolin",
+   "lat": null,
+   "lng": null,
+   "approx_m": 0,
+   "date_created": "2026-11-12T14:53:29+00:00",
+   "agency": "Wojak Properties",
+   "private_owner": false,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZkY3J1MGlsNjF3ei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.CQYi_sVmepDlymZTgRiAvpAUVvmB7Iy3j13oQOabvKw/image;s=655x491;q=80",
+   "photos": [
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZkY3J1MGlsNjF3ei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.CQYi_sVmepDlymZTgRiAvpAUVvmB7Iy3j13oQOabvKw/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5yYWE4azN4Z2YxNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.llTAGXfxROYuZS9MQMDhUsuDb0CBZmd_17kO3OjfeSk/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImMzYXluOHYycTIxczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fOwIgbDPs_v30j8ckcY-HVii0kgPjzQ6Qh8Z0wqRHTs/image;s=655x491;q=80"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Otodom",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "otodom-ID4xrmu": {
+   "source": "otodom",
+   "source_id": "ID4xrmu",
+   "url": "https://www.otodom.pl/pl/oferta/mieszkanie-4-pokojowe-na-kabatach-3600-zl-czynsz-2230-zl-ID4xrmu",
+   "title": "mieszkanie 4 pokojowe na Kabatach 3600 zł +czynsz 2230 zł",
+   "price": 3600.0,
+   "rent": 2230.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 91.0,
+   "rooms": 4,
+   "floor": "2",
+   "street": "ul. Polnej Róży",
+   "district_hint": "Warszawa, Ursynów, Kabaty",
+   "lat": null,
+   "lng": null,
+   "approx_m": 0,
+   "date_created": "2025-07-27T17:12:36+00:00",
+   "agency": null,
+   "private_owner": true,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImgwY3U1Z2lxbnVpMDItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.PEozqJsDAZt4pohqHmlFKKMWbFgg5vEq6-yGl3hiLRI/image;s=655x491;q=80",
+   "photos": [
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImgwY3U1Z2lxbnVpMDItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.PEozqJsDAZt4pohqHmlFKKMWbFgg5vEq6-yGl3hiLRI/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImkxbjBqMmliemNqMjEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MUvcytnUgwYn8YmDJK12r_XTEVMKEiV8wx4NNDn-bb8/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InI3NXI1bjRmNTl1djItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.AtfBcO_ThjiSILJFJRKLP_sU385a494FgLrgilgrTFE/image;s=655x491;q=80"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Otodom",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "otodom-ID4wQxM": {
+   "source": "otodom",
+   "source_id": "ID4wQxM",
+   "url": "https://www.otodom.pl/pl/oferta/parter-domu-z-osobnym-wejsciem-po-remoncie-od-zaraz-55-m2-wawer-ID4wQxM",
+   "title": "Parter domu z osobnym wejściem, po remoncie, od zaraz, 55 m2 - Wawer",
+   "price": 2000.0,
+   "rent": null,
+   "rent_evidence": null,
+   "area": 55.0,
+   "rooms": 1,
+   "floor": "parter",
+   "street": null,
+   "district_hint": "Warszawa, Wawer, Międzylesie",
+   "lat": 52.19622,
+   "lng": 21.17823,
+   "approx_m": 500,
+   "date_created": "2025-04-07T19:06:08+00:00",
+   "agency": null,
+   "private_owner": true,
+   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InYzNjNlcDg2YTJuai1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.5mzo_wF9xGsduMof-se2t9UaRRi4YF3ZOOBR7wPYuXA/image;s=655x491;q=80",
+   "photos": [
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InYzNjNlcDg2YTJuai1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.5mzo_wF9xGsduMof-se2t9UaRRi4YF3ZOOBR7wPYuXA/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InN0YTVxN2hocnVyOTItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0hs667a9VJzKIefJm6wDP6AN8ghtiNTm0A5DayaeuK4/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhsdzZxaTVud2czNjItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KEFB_7TWPLzuXsFrmWT-DbAxqVTroZYVGNoJdEDo4iI/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZla2Y2MmdheDJmbTMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4LBI4b-UkkwKTvbb2UMj5LLdjwK0Ll0Q8Vt9RhmahZg/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjMxaWs5dHA0cmJ1NTItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.cje9OLqhPtbfL4v_tFnj8QNwMSTjplbfX2ZLG7_T0Dg/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE1dDJvbjh3d2d1ajEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zp54xOwuLLMicMrpUd2CST4PB5oAkYuZ0KxIf-aweZ4/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpoamRhdTd0NGdycDMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5BjFhrJwpFS56A4-g6acAgxzbbZy58mOq4cIjuL18V0/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM4M2c5NjllbGx3ZzItQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ohV78niIfe1ERvlQUYKZyGBnI9gBWCNToH9WKQg_wO4/image;s=655x491;q=80",
+    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im8wM2xkZXlpaW5ydTMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CL5kOJvP5IQteMmZ1b2zOqqc0n0fMWz0OwPlZosW2F8/image;s=655x491;q=80"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": false,
+   "commission_evidence": "ogłoszenie prywatne",
+   "detail_ok": true,
+   "label": "Otodom",
+   "total": 2000.0,
+   "area_label": "Wawer · Międzylesie",
+   "zone": "kolej",
+   "star": false,
+   "approx": true,
+   "stations": [
+    "🚆 Międzylesie ~1060 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "ok",
+   "reason": null,
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true,
+   "group": "otodom-ID4wQxM"
+  },
+  "morizon-mzn2048387452": {
+   "source": "morizon",
+   "source_id": "mzn2048387452",
+   "url": "https://www.morizon.pl/oferta/wynajem-mieszkanie-warszawa-mokotow-adama-naruszewicza-72m2-mzn2048387452",
+   "title": "72m2, 3 pokoje, ul.Naruszewicza, metro Wierzbno",
+   "price": 5180.0,
+   "rent": 1440.0,
+   "rent_evidence": "…ki za media -dodatkowo płatny czynsz administracyjny 1.440zł LOKALIZACJA: Prestiżowe sąsiedztwo -…",
+   "area": 72.0,
+   "rooms": 3,
+   "floor": "1/9",
+   "street": "Adama Naruszewicza",
+   "district_hint": "Warszawa, Mokotów",
+   "lat": 52.19140690383597,
+   "lng": 21.02093006633529,
+   "approx_m": 1500,
+   "date_created": "2026-11-12",
+   "agency": "WOJAK PROPERTIES SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+   "private_owner": false,
+   "photo": "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196141_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+   "photos": [
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196141_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196149_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196165_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196175_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196211_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196215_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196231_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196237_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196257_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/00/3c/49669551_1653196267_mieszkanie-warszawa-mokotow-ul-adama-naruszewicza.jpg"
+   ],
+   "pets": "nie",
+   "pets_evidence": "…MIESZKANIE/ UL. NARUSZEWICZA/ BEZ ZWIERZĄT BUDYNEK: Nieruchomość znajduje się…",
+   "commission": true,
+   "commission_evidence": "…encja Nieruchomości pobieramy prowizję. --- 72M2 / 3 ROOMS / FUNCTIONAL APA…",
+   "detail_ok": true,
+   "label": "Morizon",
+   "total": 6620.0,
+   "area_label": null,
+   "zone": null,
+   "star": false,
+   "approx": true,
+   "stations": [
+    "🚇 Wierzbno ~310 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "odrzucona",
+   "reason": "koszt 6620 zł",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "morizon-mzn2048387566": {
+   "source": "morizon",
+   "source_id": "mzn2048387566",
+   "url": "https://www.morizon.pl/oferta/wynajem-mieszkanie-warszawa-ursynow-aleja-komisji-edukacji-narodowej-59m2-mzn2048387566",
+   "title": "59m2, 3 pokoje, garaż, metro Ursynów",
+   "price": 5500.0,
+   "rent": null,
+   "rent_evidence": null,
+   "area": 59.0,
+   "rooms": 3,
+   "floor": "1/7",
+   "street": "Aleja Komisji Edukacji Narodowej",
+   "district_hint": "Warszawa, Ursynów",
+   "lat": 52.1429653,
+   "lng": 21.0545367,
+   "approx_m": 1500,
+   "date_created": "2026-11-12",
+   "agency": "WOJAK PROPERTIES SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+   "private_owner": false,
+   "photo": "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194097_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+   "photos": [
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194097_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194113_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194125_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194225_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194235_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194265_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194279_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194301_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194333_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg",
+    "https://d-gr.cdngr.pl/kadry/k/r/gr-ogl/ce/2d/49670145_1653194345_mieszkanie-warszawa-ursynow-al-komisji-edukacji-narodowej.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": true,
+   "commission_evidence": "…encja Nieruchomości pobieramy prowizję. --- 59M2/ 3 ROOMS / GATED COMMUNITY…",
+   "detail_ok": true,
+   "label": "Morizon",
+   "total": 5500.0,
+   "area_label": "Ursynów · Natolin",
+   "zone": "ursynow",
+   "star": false,
+   "approx": true,
+   "stations": [
+    "🚇 Natolin ~150 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "ok",
+   "reason": null,
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true,
+   "group": "morizon-mzn2048387566"
+  },
+  "domiporta-157006373": {
+   "source": "domiporta",
+   "source_id": "157006373",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-mokotow-adama-naruszewicza-72m2/157006373",
+   "title": "mieszkanie na wynajem 72m2 mieszkanie Warszawa, Mokotów, Adama Naruszewicza",
+   "price": 5180.0,
+   "rent": 1440.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 72.0,
+   "rooms": 3,
+   "floor": null,
+   "street": "Adama Naruszewicza",
+   "district_hint": "Mokotów",
+   "lat": null,
+   "lng": null,
+   "approx_m": null,
+   "date_created": null,
+   "agency": null,
+   "private_owner": null,
+   "photo": "https://galeria.domiporta.pl/pictures/small/16/98/5a/5a98fa4eaa8bbbc38ddabca0df542873a4cb881f/wynajme-mieszkanie-warszawa-mokotow.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/small/16/98/5a/5a98fa4eaa8bbbc38ddabca0df542873a4cb881f/wynajme-mieszkanie-warszawa-mokotow.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Domiporta",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "domiporta-157006453": {
+   "source": "domiporta",
+   "source_id": "157006453",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-ursynow-al-komisji-edukacji-narodowej-59m2/157006453",
+   "title": "mieszkanie na wynajem 59m2 mieszkanie Warszawa, Ursynów, al. Komisji Edukacji Narodowej",
+   "price": 5500.0,
+   "rent": 1800.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 59.0,
+   "rooms": 3,
+   "floor": null,
+   "street": "al. Komisji Edukacji Narodowej",
+   "district_hint": "Ursynów",
+   "lat": null,
+   "lng": null,
+   "approx_m": null,
+   "date_created": null,
+   "agency": null,
+   "private_owner": null,
+   "photo": "https://galeria.domiporta.pl/pictures/small/19/f9/fb/fbf99b5f0569213d5683f38f482c82fb0d3b3866/wynajme-mieszkanie-warszawa-ursynow.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/small/19/f9/fb/fbf99b5f0569213d5683f38f482c82fb0d3b3866/wynajme-mieszkanie-warszawa-ursynow.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Domiporta",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "last_seen": "2026-11-12T20:05:05+01:00",
+   "missing": 0,
+   "active": true
   }
  },
  "groups": {
@@ -54414,6 +54840,14 @@
   "morizon-mzn2048386554": {
    "first_seen": "2026-11-12T15:05:06+01:00",
    "notified": true
+  },
+  "otodom-ID4wQxM": {
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "notified": true
+  },
+  "morizon-mzn2048387566": {
+   "first_seen": "2026-11-12T20:05:05+01:00",
+   "notified": true
   }
  },
  "sources": {
@@ -54423,10 +54857,10 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-12T15:05:06+01:00",
-   "last_try": "2026-11-12T15:05:06+01:00",
-   "count": 164,
-   "found": 477,
+   "last_ok": "2026-11-12T20:05:05+01:00",
+   "last_try": "2026-11-12T20:05:05+01:00",
+   "count": 162,
+   "found": 479,
    "problems": []
   },
   "morizon": {
@@ -54435,10 +54869,10 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-12T15:05:06+01:00",
-   "last_try": "2026-11-12T15:05:06+01:00",
-   "count": 105,
-   "found": 390,
+   "last_ok": "2026-11-12T20:05:05+01:00",
+   "last_try": "2026-11-12T20:05:05+01:00",
+   "count": 103,
+   "found": 392,
    "problems": []
   },
   "domiporta": {
@@ -54447,13 +54881,13 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-12T15:05:06+01:00",
-   "last_try": "2026-11-12T15:05:06+01:00",
-   "count": 65,
-   "found": 260,
+   "last_ok": "2026-11-12T20:05:05+01:00",
+   "last_try": "2026-11-12T20:05:05+01:00",
+   "count": 64,
+   "found": 254,
    "problems": []
   }
  },
- "last_run": "2026-11-12T15:05:06+01:00",
- "last_run_seconds": 149
+ "last_run": "2026-11-12T20:05:05+01:00",
+ "last_run_seconds": 121
 }
