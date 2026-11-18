@@ -39425,7 +39425,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "domiporta-156937001": {
@@ -40520,8 +40520,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156990532": {
    "source": "domiporta",
@@ -40564,8 +40565,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "morizon-mzn2048297221",
    "photos": [
     "https://galeria.domiporta.pl/pictures/big/11/e7/6a/6ae7ac9e8a439e2a2b4efbf7efe5e4ee52c7189a/wynajme-mieszkanie-warszawa-targowek.jpg",
@@ -40578,7 +40579,8 @@
     "https://galeria.domiporta.pl/pictures/big/14/d5/ab/abd549cba58bdd79aac6fdf3642eae22ca9a2990/wynajme-mieszkanie-warszawa-targowek.jpg",
     "https://galeria.domiporta.pl/pictures/big/18/42/b1/b1428962488409f4c7ff2f084f803d088bddba30/wynajme-mieszkanie-warszawa-targowek.jpg",
     "https://galeria.domiporta.pl/pictures/big/11/ab/65/65ab17e75e53f7b0caa443e54db2575f66ac891c/wynajme-mieszkanie-warszawa-targowek.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156988141": {
    "source": "domiporta",
@@ -41488,8 +41490,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-11T20:36:45+01:00",
    "last_seen": "2026-11-11T20:36:45+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156995707": {
    "source": "domiporta",
@@ -42382,8 +42385,9 @@
    "reason": "poza lokalizacjami: Mokotów, Warszawa, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156984281": {
    "source": "domiporta",
@@ -43047,8 +43051,9 @@
    "reason": "poza lokalizacjami: Służew, Osiedle Służewiec Południowy, Mokotów",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156960616": {
    "source": "domiporta",
@@ -43347,8 +43352,9 @@
    "reason": "poza lokalizacjami: Ksawerów, Mokotów, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156950380": {
    "source": "domiporta",
@@ -44089,8 +44095,9 @@
    "reason": "poza lokalizacjami: Mokotów, Sielce, Warszawa",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156863227": {
    "source": "domiporta",
@@ -46702,8 +46709,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DLk6",
    "photos": [
     "https://galeria.domiporta.pl/pictures/big/18/0e/e1/e10e80aef0d9eabe01051c467ba3e01af6ec2de8/wynajme-mieszkanie-warszawa-ursynow.jpg",
@@ -46716,7 +46723,8 @@
     "https://galeria.domiporta.pl/pictures/big/19/0f/72/720f974dacc6edeff15471696dda3fc7e905a68b/wynajme-mieszkanie-warszawa-ursynow.jpg",
     "https://galeria.domiporta.pl/pictures/big/11/e8/d4/d4e8af12d6ecccaa224f075dbe05b8cfff441518/wynajme-mieszkanie-warszawa-ursynow.jpg",
     "https://galeria.domiporta.pl/pictures/big/12/c7/97/97c7b0963b655428918ee4bceb9d0b956865ecc3/wynajme-mieszkanie-warszawa-ursynow.jpg"
-   ]
+   ],
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156991764": {
    "source": "domiporta",
@@ -47149,8 +47157,9 @@
    "reason": "Ursynów: metro 854 m (limit 500 m)",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156965027": {
    "source": "domiporta",
@@ -53025,9 +53034,10 @@
    "reason": null,
    "first_seen": "2026-11-11T20:36:45+01:00",
    "last_seen": "2026-11-11T20:36:45+01:00",
-   "missing": 1,
-   "active": true,
-   "group": "morizon-mzn2048279626"
+   "missing": 2,
+   "active": false,
+   "group": "morizon-mzn2048279626",
+   "gone_at": "2026-11-18T20:05:28+01:00"
   },
   "domiporta-156762296": {
    "source": "domiporta",
@@ -62429,6 +62439,171 @@
    "missing": 0,
    "active": true,
    "group": "morizon-mzn2048238898"
+  },
+  "domiporta-157015969": {
+   "source": "domiporta",
+   "source_id": "157015969",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-praga-poludnie-lizbonska-70m2/157015969",
+   "title": "mieszkanie na wynajem 70m2 mieszkanie Warszawa, Praga-Południe, Saska Kępa, Lizbońska",
+   "price": 5100.0,
+   "rent": 1300.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 70.0,
+   "rooms": 3,
+   "floor": null,
+   "street": "Lizbońska",
+   "district_hint": "Praga-Południe, Saska Kępa",
+   "lat": null,
+   "lng": null,
+   "approx_m": null,
+   "date_created": null,
+   "agency": null,
+   "private_owner": null,
+   "photo": "https://galeria.domiporta.pl/pictures/small/16/6b/7d/7d6bfad21ad09c429fe488f9f0595af2062d4809/wynajme-mieszkanie-warszawa-praga-poludnie.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/small/16/6b/7d/7d6bfad21ad09c429fe488f9f0595af2062d4809/wynajme-mieszkanie-warszawa-praga-poludnie.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Domiporta",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-18T20:05:28+01:00",
+   "last_seen": "2026-11-18T20:05:28+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "domiporta-157015905": {
+   "source": "domiporta",
+   "source_id": "157015905",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-praga-poludnie-drwecka-69m2/157015905",
+   "title": "mieszkanie na wynajem 69m2 mieszkanie Warszawa, Praga-Południe, Drwęcka",
+   "price": 4650.0,
+   "rent": 1650.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 69.0,
+   "rooms": 3,
+   "floor": null,
+   "street": "Drwęcka",
+   "district_hint": "Praga-Południe",
+   "lat": null,
+   "lng": null,
+   "approx_m": null,
+   "date_created": null,
+   "agency": null,
+   "private_owner": null,
+   "photo": "https://galeria.domiporta.pl/pictures/small/16/86/7a/7a866f740fc771084057bd3bf8d590e180ee2290/wynajme-mieszkanie-warszawa-praga-poludnie.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/small/16/86/7a/7a866f740fc771084057bd3bf8d590e180ee2290/wynajme-mieszkanie-warszawa-praga-poludnie.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Domiporta",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-18T20:05:28+01:00",
+   "last_seen": "2026-11-18T20:05:28+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "domiporta-157015696": {
+   "source": "domiporta",
+   "source_id": "157015696",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-praga-polnoc-bialostocka-60m2/157015696",
+   "title": "mieszkanie na wynajem 60m2 mieszkanie Warszawa, Praga-Północ, Białostocka",
+   "price": 3600.0,
+   "rent": 1400.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 60.4,
+   "rooms": 3,
+   "floor": null,
+   "street": "Białostocka",
+   "district_hint": "Praga-Północ",
+   "lat": 52.25510866898483,
+   "lng": 21.040586803482235,
+   "approx_m": 1500,
+   "date_created": "2026-11-18",
+   "agency": "Bracia Strzelczyk Nieruchomości",
+   "private_owner": false,
+   "photo": "https://galeria.domiporta.pl/pictures/small/17/f3/d4/d4f37c1fe8cd2e9aa1f110afefe604d1631659a2/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/big/17/f3/d4/d4f37c1fe8cd2e9aa1f110afefe604d1631659a2/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/16/5b/90/905bf64919f1860f5438d24425a2c63da6c6c00e/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/13/2b/ac/ac2b3968224ed0a50e52ae9b227da3a6bff6937f/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/11/89/dd/dd8914f211bbfc530c75bf951292b71a67b818b2/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/12/98/bd/bd98237e9e66ccb5844486bc358af2c6c6ca158f/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/16/67/55/5567f46fb059953331b6c4f8926054f0f6fe8142/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/12/52/30/3052be21db85466f2e0a5a300d82dc0ab9d9bd95/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/19/b0/24/24b09715459d39fd2c60a298cef61fb66c41499c/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/13/63/37/3763370994b75725c73aaa86e75d1c351925896a/wynajme-mieszkanie-warszawa-praga-polnoc.jpg",
+    "https://galeria.domiporta.pl/pictures/big/15/2c/bc/bc2c5d80588a339cd3a01c83cfabd2ce551c254b/wynajme-mieszkanie-warszawa-praga-polnoc.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": true,
+   "commission_evidence": "ogłoszenie biura: Bracia Strzelczyk Nieruchomości",
+   "detail_ok": true,
+   "label": "Domiporta",
+   "total": 5000.0,
+   "area_label": "Praga-Północ · Stara Praga",
+   "zone": "praga_polnoc",
+   "star": false,
+   "approx": true,
+   "stations": [
+    "🚆 Wileńska ~160 m",
+    "🚇 Dworzec Wileński ~290 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "ok",
+   "reason": null,
+   "first_seen": "2026-11-18T20:05:28+01:00",
+   "last_seen": "2026-11-18T20:05:28+01:00",
+   "missing": 0,
+   "active": true,
+   "group": "domiporta-157015696"
+  },
+  "domiporta-157015798": {
+   "source": "domiporta",
+   "source_id": "157015798",
+   "url": "https://www.domiporta.pl/nieruchomosci/wynajme-mieszkanie-trzypokojowe-warszawa-mokotow-wygledow-jana-pawla-woronicza-91m2/157015798",
+   "title": "mieszkanie na wynajem 91m2 mieszkanie Warszawa, Mokotów Wyględów, Jana Pawła Woronicza",
+   "price": 5500.0,
+   "rent": 1100.0,
+   "rent_evidence": "pole „czynsz” w Domiporcie",
+   "area": 91.0,
+   "rooms": 3,
+   "floor": null,
+   "street": "Jana Pawła Woronicza",
+   "district_hint": "Mokotów Wyględów",
+   "lat": null,
+   "lng": null,
+   "approx_m": null,
+   "date_created": null,
+   "agency": null,
+   "private_owner": null,
+   "photo": "https://galeria.domiporta.pl/pictures/small/13/df/3d/3ddfc9ff2f11c7ce8f7b59b9210d61aeff418051/wynajme-mieszkanie-warszawa-mokotow_wygledow.jpg",
+   "photos": [
+    "https://galeria.domiporta.pl/pictures/small/13/df/3d/3ddfc9ff2f11c7ce8f7b59b9210d61aeff418051/wynajme-mieszkanie-warszawa-mokotow_wygledow.jpg"
+   ],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Domiporta",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-18T20:05:28+01:00",
+   "last_seen": "2026-11-18T20:05:28+01:00",
+   "missing": 0,
+   "active": true
   }
  },
  "groups": {
@@ -63667,29 +63842,33 @@
   "morizon-mzn2048399700": {
    "first_seen": "2026-11-18T15:05:06+01:00",
    "notified": true
+  },
+  "domiporta-157015696": {
+   "first_seen": "2026-11-18T20:05:28+01:00",
+   "notified": true
   }
  },
  "sources": {
   "otodom": {
    "label": "Otodom",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "otodom.pl: błąd połączenia (RemoteProtocolError)",
    "last_ok": "2026-11-18T15:05:06+01:00",
-   "last_try": "2026-11-18T15:05:06+01:00",
+   "last_try": "2026-11-18T20:05:28+01:00",
    "count": 187,
    "found": 467,
    "problems": []
   },
   "morizon": {
    "label": "Morizon",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "'properties'",
    "last_ok": "2026-11-18T15:05:06+01:00",
-   "last_try": "2026-11-18T15:05:06+01:00",
+   "last_try": "2026-11-18T20:05:28+01:00",
    "count": 117,
    "found": 377,
    "problems": []
@@ -63700,13 +63879,13 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-18T15:05:06+01:00",
-   "last_try": "2026-11-18T15:05:06+01:00",
-   "count": 68,
-   "found": 253,
+   "last_ok": "2026-11-18T20:05:28+01:00",
+   "last_try": "2026-11-18T20:05:28+01:00",
+   "count": 66,
+   "found": 256,
    "problems": []
   }
  },
- "last_run": "2026-11-18T15:05:06+01:00",
- "last_run_seconds": 233
+ "last_run": "2026-11-18T20:05:28+01:00",
+ "last_run_seconds": 955
 }
