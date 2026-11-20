@@ -3196,8 +3196,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4DCVi": {
    "source": "otodom",
@@ -3273,8 +3274,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DCSz",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgxdzMwMHl5OTR5eC1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.nYlNzFfJgX0od8FrvepFRswEy5QvTLXT_ckMAs5c2ug/image;s=655x491;q=80",
@@ -3287,7 +3288,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY0cHZmYzkyMGhxODEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gwnJVqkydh3MgIz7c0D-bQMmhPuZcwBYvrplFypCNRU/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ4M2xhdXJ6ZWt4cDMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.OJ84J5MMuTK9K3JCI8l3VLvGYUaf9B5u5nEKckmFcfo/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc5bzhjcXE4NGl6eS1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.AvbiubP5KiC8yzSjzaRd0bOOiCajfGtESVDq-nKXrgQ/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4DCrG": {
    "source": "otodom",
@@ -3416,8 +3418,8 @@
    "reason": null,
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true,
+   "missing": 2,
+   "active": false,
    "group": "otodom-ID4DBXQ",
    "photos": [
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdpbG83NGx6b201azMtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.GHF2AWTpV8FPVzpmDXIu8GWNg37eCsh4-8G9JMSwqPo/image;s=655x491;q=80",
@@ -3430,7 +3432,8 @@
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM2OXo3MnJ0bGo2YS1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.rOhQH4I0jO6Vl5gzZx1a5YUuqekEYDHGxuZhnIdKMU4/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InUxZGFyb2V4eDAxbS1BUEwiLCJ3IjpbeyJmbiI6ImVudmZxcWUxYXk0azEtQVBMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.73gKLHipUyesrNmKdIjAa5LddxKccIuAmc6KQaRI2Ks/image;s=655x491;q=80",
     "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE3cXB0cWZ0aGRmYzEtQVBMIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.h10EiFw0sy3eXQy3uKcCn9HlDjI-68B7_9jiuvfkhqU/image;s=655x491;q=80"
-   ]
+   ],
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4DB1u": {
    "source": "otodom",
@@ -4047,8 +4050,9 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4Dv4K": {
    "source": "otodom",
@@ -9063,8 +9067,9 @@
    "reason": "dodana ponad 2 mies. temu",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4xTPD": {
    "source": "otodom",
@@ -12784,7 +12789,7 @@
    "reason": "cena/metraż z listy",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4DQwl": {
@@ -17462,8 +17467,9 @@
    "reason": "Ursynów: metro 537 m (limit 500 m)",
    "first_seen": "2026-11-08T13:10:49+01:00",
    "last_seen": "2026-11-08T13:29:38+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4DbN7": {
    "source": "otodom",
@@ -49371,9 +49377,10 @@
    "reason": null,
    "first_seen": "2026-11-09T15:05:05+01:00",
    "last_seen": "2026-11-09T15:05:05+01:00",
-   "missing": 1,
-   "active": true,
-   "group": "otodom-ID4DTk6"
+   "missing": 2,
+   "active": false,
+   "group": "otodom-ID4DTk6",
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4yCiy": {
    "source": "otodom",
@@ -49590,7 +49597,7 @@
    "reason": "Targówek (nie Mieszkaniowy): stacja Zacisze-Wilno 2759 m",
    "first_seen": "2026-11-09T15:05:05+01:00",
    "last_seen": "2026-11-09T15:05:05+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true
   },
   "otodom-ID4DpYV": {
@@ -50895,7 +50902,7 @@
    "source_id": "ID4DUqi",
    "url": "https://www.otodom.pl/pl/oferta/las-kabacki-parking-metro-ID4DUqi",
    "title": "Las Kabacki | parking | metro",
-   "price": 3000.0,
+   "price": 2700.0,
    "rent": 1120.0,
    "rent_evidence": "pole „czynsz” w Otodom",
    "area": 61.0,
@@ -50903,39 +50910,38 @@
    "floor": "3",
    "street": "ul. Na Przyzbie",
    "district_hint": "Warszawa, Ursynów, Kabaty",
-   "lat": null,
-   "lng": null,
+   "lat": 52.127914,
+   "lng": 21.064901,
    "approx_m": 0,
    "date_created": "2026-11-09T16:04:14+00:00",
    "agency": "Eastate Agency",
    "private_owner": false,
-   "photo": "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijg1YjNlNTVmN2w1eDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1cLIhw4jE8pIE5ywK2HAzg4HeW67rygXr68bkorHv1A/image;s=655x491;q=80",
-   "photos": [
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijg1YjNlNTVmN2w1eDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1cLIhw4jE8pIE5ywK2HAzg4HeW67rygXr68bkorHv1A/image;s=655x491;q=80",
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImQ0eG53cjFmZ2Z3NjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._FvFjwU62sJvIcMWiVAs1XgUTQ-_m1rFSj4ElqNLw5g/image;s=655x491;q=80",
-    "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZraHNqNDYzMGFhbjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiJlbnZmcXFlMWF5NGsxLUFQTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1qUgfzrkaoKcHvAy-DoNdMu88eh2N02qZazBtcSMALQ/image;s=655x491;q=80"
-   ],
+   "photo": null,
+   "photos": [],
    "pets": null,
    "pets_evidence": null,
    "commission": true,
    "commission_evidence": "ogłoszenie biura: Eastate Agency",
-   "detail_ok": false,
+   "detail_ok": true,
    "label": "Otodom",
-   "total": 4120.0,
+   "total": 3820.0,
    "area_label": "Ursynów · Kabaty",
    "zone": "ursynow",
    "star": false,
-   "approx": true,
-   "stations": [],
+   "approx": false,
+   "stations": [
+    "🚇 Kabaty 350 m"
+   ],
    "praga_agency": false,
    "institutional": false,
    "status": "ok",
    "reason": null,
    "first_seen": "2026-11-10T08:05:49+01:00",
-   "last_seen": "2026-11-10T08:05:49+01:00",
+   "group": "otodom-ID4DUqi",
+   "price_before": 3000.0,
+   "last_seen": "2026-11-20T20:07:32+01:00",
    "missing": 0,
-   "active": true,
-   "group": "otodom-ID4DUqi"
+   "active": true
   },
   "otodom-ID4DU2c": {
    "source": "otodom",
@@ -53795,8 +53801,9 @@
    "reason": "Targówek (nie Mieszkaniowy): stacja Zacisze-Wilno 2710 m",
    "first_seen": "2026-11-12T15:05:06+01:00",
    "last_seen": "2026-11-12T15:05:06+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4DVpb": {
    "source": "otodom",
@@ -56247,10 +56254,10 @@
   "otodom-ID4DZrM": {
    "source": "otodom",
    "source_id": "ID4DZrM",
-   "url": "https://www.otodom.pl/pl/oferta/nowoczesne-mieszkanie-60-m-3-pokoje-2-miejsca-parkingowe-w-cenie-ID4DZrM",
-   "title": "Nowoczesne mieszkanie 60 m² | 3 pokoje | 2 miejsca parkingowe w cenie",
-   "price": 3990.0,
-   "rent": 1300.0,
+   "url": "https://www.otodom.pl/pl/oferta/nowoczesne-mieszkanie-60-m-3-pokoje-miejsce-parkingowe-w-cenie-ID4DZrM",
+   "title": "Nowoczesne mieszkanie 60 m² | 3 pokoje |Miejsce parkingowe w cenie",
+   "price": 3890.0,
+   "rent": 1150.0,
    "rent_evidence": "pole „czynsz” w Otodom",
    "area": 60.0,
    "rooms": 3,
@@ -56271,7 +56278,7 @@
    "commission_evidence": "…zależnymi pokojami, * wynajem bezpośrednio od właściciela – bez prowizji dla biura nieruchomości.…",
    "detail_ok": true,
    "label": "Otodom",
-   "total": 5290.0,
+   "total": 5040.0,
    "area_label": "Praga-Południe · Gocław",
    "zone": "praga_poludnie",
    "star": false,
@@ -56285,8 +56292,8 @@
    "reason": null,
    "first_seen": "2026-11-16T15:05:06+01:00",
    "group": "otodom-ID4DZrM",
-   "price_before": 4100.0,
-   "last_seen": "2026-11-20T15:05:06+01:00",
+   "price_before": 3990.0,
+   "last_seen": "2026-11-20T20:07:32+01:00",
    "missing": 0,
    "active": true
   },
@@ -60987,7 +60994,7 @@
    "reason": null,
    "first_seen": "2026-11-18T15:05:06+01:00",
    "last_seen": "2026-11-18T15:05:06+01:00",
-   "missing": 0,
+   "missing": 1,
    "active": true,
    "group": "otodom-ID4E1Wj"
   },
@@ -61200,8 +61207,9 @@
    "reason": "Wesoła: stacja 4113 m (limit 600 m)",
    "first_seen": "2026-11-18T15:05:06+01:00",
    "last_seen": "2026-11-18T15:05:06+01:00",
-   "missing": 1,
-   "active": true
+   "missing": 2,
+   "active": false,
+   "gone_at": "2026-11-20T20:07:32+01:00"
   },
   "otodom-ID4mq3X": {
    "source": "otodom",
@@ -64936,6 +64944,85 @@
    "last_seen": "2026-11-20T15:05:06+01:00",
    "missing": 0,
    "active": true
+  },
+  "otodom-ID4E5cB": {
+   "source": "otodom",
+   "source_id": "ID4E5cB",
+   "url": "https://www.otodom.pl/pl/oferta/wislany-mokotow-3-pokoje-62m2-ID4E5cB",
+   "title": "Wiślany Mokotów | 3 pokoje | 62m2",
+   "price": 4700.0,
+   "rent": 1200.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 62.0,
+   "rooms": 3,
+   "floor": "4",
+   "street": "Dywizjonu AK \"Jeleń\"",
+   "district_hint": "Warszawa, Mokotów, Siekierki",
+   "lat": null,
+   "lng": null,
+   "approx_m": 0,
+   "date_created": "2026-11-20T17:48:41+00:00",
+   "agency": "REST NEST",
+   "private_owner": false,
+   "photo": null,
+   "photos": [],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": null,
+   "commission_evidence": null,
+   "detail_ok": false,
+   "label": "Otodom",
+   "status": "odrzucona",
+   "reason": "cena/metraż z listy",
+   "first_seen": "2026-11-20T20:07:32+01:00",
+   "last_seen": "2026-11-20T20:07:32+01:00",
+   "missing": 0,
+   "active": true
+  },
+  "otodom-ID4E58i": {
+   "source": "otodom",
+   "source_id": "ID4E58i",
+   "url": "https://www.otodom.pl/pl/oferta/metro-kabaty-i-las-bez-kompromisow-garderoba-od-zaraz-ID4E58i",
+   "title": "Metro Kabaty i las bez kompromisów | Garderoba | od zaraz",
+   "price": 3600.0,
+   "rent": 900.0,
+   "rent_evidence": "pole „czynsz” w Otodom",
+   "area": 57.0,
+   "rooms": 3,
+   "floor": "5",
+   "street": "Wąwozowa 28",
+   "district_hint": "Warszawa, Ursynów, Kabaty",
+   "lat": 52.132065,
+   "lng": 21.059479,
+   "approx_m": 0,
+   "date_created": "2026-11-20T16:20:50+00:00",
+   "agency": "Eteria Consulting Sp. z o.o.",
+   "private_owner": false,
+   "photo": null,
+   "photos": [],
+   "pets": null,
+   "pets_evidence": null,
+   "commission": true,
+   "commission_evidence": "ogłoszenie biura: Eteria Consulting Sp. z o.o.",
+   "detail_ok": true,
+   "label": "Otodom",
+   "total": 4500.0,
+   "area_label": "Ursynów · Kabaty",
+   "zone": "ursynow",
+   "star": false,
+   "approx": false,
+   "stations": [
+    "🚇 Kabaty 320 m"
+   ],
+   "praga_agency": false,
+   "institutional": false,
+   "status": "ok",
+   "reason": null,
+   "first_seen": "2026-11-20T20:07:32+01:00",
+   "last_seen": "2026-11-20T20:07:32+01:00",
+   "missing": 0,
+   "active": true,
+   "group": "otodom-ID4DALO"
   }
  },
  "groups": {
@@ -66251,37 +66338,37 @@
    "alerted": false,
    "ok": true,
    "error": null,
-   "last_ok": "2026-11-20T15:05:06+01:00",
-   "last_try": "2026-11-20T15:05:06+01:00",
-   "count": 186,
-   "found": 472,
+   "last_ok": "2026-11-20T20:07:32+01:00",
+   "last_try": "2026-11-20T20:07:32+01:00",
+   "count": 184,
+   "found": 471,
    "problems": []
   },
   "morizon": {
    "label": "Morizon",
-   "failures": 6,
+   "failures": 7,
    "alerted": true,
    "ok": false,
    "error": "'properties'",
    "last_ok": "2026-11-18T15:05:06+01:00",
-   "last_try": "2026-11-20T15:05:06+01:00",
+   "last_try": "2026-11-20T20:07:32+01:00",
    "count": 117,
    "found": 377,
    "problems": []
   },
   "domiporta": {
    "label": "Domiporta",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "domiporta.pl: błąd połączenia (ReadTimeout)",
    "last_ok": "2026-11-20T15:05:06+01:00",
-   "last_try": "2026-11-20T15:05:06+01:00",
+   "last_try": "2026-11-20T20:07:32+01:00",
    "count": 64,
    "found": 256,
    "problems": []
   }
  },
- "last_run": "2026-11-20T15:05:06+01:00",
- "last_run_seconds": 110
+ "last_run": "2026-11-20T20:07:32+01:00",
+ "last_run_seconds": 1098
 }
