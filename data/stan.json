@@ -67925,41 +67925,41 @@
  "sources": {
   "otodom": {
    "label": "Otodom",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "otodom.pl: błąd połączenia (RemoteProtocolError)",
    "last_ok": "2026-11-23T15:05:05+01:00",
-   "last_try": "2026-11-23T15:05:05+01:00",
+   "last_try": "2026-11-23T20:06:49+01:00",
    "count": 192,
    "found": 456,
    "problems": []
   },
   "morizon": {
    "label": "Morizon",
-   "failures": 15,
+   "failures": 16,
    "alerted": true,
    "ok": false,
    "error": "'properties'",
    "last_ok": "2026-11-18T15:05:06+01:00",
-   "last_try": "2026-11-23T15:05:05+01:00",
+   "last_try": "2026-11-23T20:06:49+01:00",
    "count": 117,
    "found": 377,
    "problems": []
   },
   "domiporta": {
    "label": "Domiporta",
-   "failures": 0,
+   "failures": 1,
    "alerted": false,
-   "ok": true,
-   "error": null,
+   "ok": false,
+   "error": "domiporta.pl: błąd połączenia (RemoteProtocolError)",
    "last_ok": "2026-11-23T15:05:05+01:00",
-   "last_try": "2026-11-23T15:05:05+01:00",
+   "last_try": "2026-11-23T20:06:49+01:00",
    "count": 70,
    "found": 259,
    "problems": []
   }
  },
- "last_run": "2026-11-23T15:05:05+01:00",
- "last_run_seconds": 125
+ "last_run": "2026-11-23T20:06:49+01:00",
+ "last_run_seconds": 2808
 }
